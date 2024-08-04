@@ -1,13 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-
-import { Providers } from "./providers";
-
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: {
@@ -48,8 +45,7 @@ export default function RootLayout({
             </main>
             <footer className="w-full flex items-center justify-center py-3">
             </footer>
-          </div>
-        </Providers>
+          </div></Providers>
       </body>
     </html>
   );

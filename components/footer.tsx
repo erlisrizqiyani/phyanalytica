@@ -88,9 +88,9 @@ const Footer = () => {
           © 2024 Phyanalytica, All Rights Reserved
         </div>
         <div className="flex space-x-4">
-          <a href="#">Tentang Kami</a>
-          <a href="#">Kontak</a>
-          <a href="#">Privasi & Policy</a>
+          <p >Tentang Kami</p>
+          <p >Kontak</p>
+          <p >Privasi & Policy</p>
         </div>
       </div>
     </footer>

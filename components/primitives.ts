@@ -17,7 +17,7 @@ export const title = tv({
     },
     size: {
       sm: "text-base", // Placeholder, not used in this case
-      md: "text-lg",   // Placeholder, not used in this case
+      md: "text-lg", // Placeholder, not used in this case
       lg: "text-xl",   // Placeholder, not used in this case
       black48: "text-[48px] font-black", // Black - 48
       semiBold40: "text-[40px] font-semibold", // Semi bold - 40
@@ -66,7 +66,7 @@ export const subtitle = tv({
     },
     size: {
       sm: "text-base", // Placeholder, not used in this case
-      md: "text-lg",   // Placeholder, not used in this case
+      md: "text-lg",  // Placeholder, not used in this case
       lg: "text-xl",   // Placeholder, not used in this case
       black48: "text-[48px] font-bold", // Black - 48
       semiBold40: "text-[40px] font-semibold", // Semi bold - 40
