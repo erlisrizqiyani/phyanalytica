@@ -11,30 +11,30 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-purple-900 text-white py-10">
+      <div className="container px-32 mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <div className="flex items-center mb-4">
             <img
-              src="/path-to-logo.png"
+              src="/Logo-white.svg"
               alt="Phyanalytica"
-              className="w-8 h-8 mr-2"
+              className="w-17 h-15 mr-2"
             />
-            <span className="text-xl font-bold">phyanalytica</span>
+            <span className="text-4xl font-bold">phyanalytica</span>
           </div>
           <div className="mb-4">
             <h4 className="font-bold">Head Office</h4>
-            <div className="flex items-center">
+            <div className="flex items-center mt-4">
               <img
-                src="/path-to-netherlands-flag.png"
-                alt="Netherlands Flag"
+                src="/germany.png"
+                alt="Germany Flag"
                 className="w-5 h-5 mr-2"
               />
               <span>Hattingerstr 273 44795, Bochum NRW Germany</span>
             </div>
             <div className="flex items-center mt-2">
               <img
-                src="/path-to-indonesia-flag.png"
+                src="/indonesia.png"
                 alt="Indonesia Flag"
                 className="w-5 h-5 mr-2"
               />
@@ -50,14 +50,9 @@ const Footer = () => {
               <FaEnvelope className="w-5 h-5 mr-2" />
               <span>syayakay@gmail.com</span>
             </div>
-            <div className="flex items-center">
-              <FaPhone className="w-5 h-5 mr-2" />
-              <span>+1-212-9876543</span>
-            </div>
           </div>
-          <div className="mt-4">© 2024 Phyanalytica, All Rights Reserved</div>
         </div>
-        <div>
+        <div className="hidden md:block ml-auto text-center">
           <h4 className="font-bold mb-4">Home</h4>
           <ul className="space-y-2">
             <li>About Us</li>
@@ -67,7 +62,7 @@ const Footer = () => {
             <li>Client</li>
           </ul>
         </div>
-        <div>
+        <div className="hidden md:block ml-auto text-center">
           <h4 className="font-bold mb-4">Solution</h4>
           <ul className="space-y-2">
             <li>About Us</li>
@@ -77,7 +72,7 @@ const Footer = () => {
             <li>Client</li>
           </ul>
         </div>
-        <div>
+        <div className="hidden md:block ml-auto text-center">
           <h4 className="font-bold mb-4">Portfolio</h4>
           <ul className="space-y-2">
             <li>About Us</li>
@@ -88,12 +83,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="container mx-auto flex justify-between items-center mt-10">
+      <div className="container px-32 mx-auto flex justify-between items-center mt-8">
         <div className="flex space-x-4">
-          <FaFacebook className="w-5 h-5" />
-          <FaTwitter className="w-5 h-5" />
-          <FaLinkedin className="w-5 h-5" />
-          <FaInstagram className="w-5 h-5" />
+          © 2024 Phyanalytica, All Rights Reserved
         </div>
         <div className="flex space-x-4">
           <a href="#">Tentang Kami</a>

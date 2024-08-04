@@ -13,6 +13,7 @@ module.exports = {
         opacity: {
           40: 'rgba(0, 0, 0, 0.8)',
         },
+        
         black: '#000000',
         white: '#FFFFFF',
         purple: {
