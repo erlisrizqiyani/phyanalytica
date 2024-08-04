@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar-transparent {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s ease;
+  color: black;
+}
+
+/* globals.css */
+
+.navbar-transparent .nav-item {
+  color: white;
+}
+
+.navbar-scrolled .nav-item {
+  color: black;
+}
+
+.nav-item {
+  transition: color 0.3s ease;
+}
+
+.nav-item[data-active="true"] {
+  color: #0072f5; /* Adjust based on your active state color */
+  font-weight: 500;
+}
+
+/* styles/globals.css */
+@layer utilities {
+  .tracking-tight-negative {
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+}
+
+/* styles/globals.css atau file CSS khusus */
+.content-title {
+    max-width: 596px; /* Batasi lebar maksimum elemen */
+    overflow-wrap: break-word; /* Memastikan teks akan pindah baris jika terlalu panjang */
+    word-wrap: break-word; /* Untuk mendukung browser yang lebih lama */
+    margin: 0 auto; /* Menempatkan elemen di tengah halaman jika diperlukan */
+  }
+  

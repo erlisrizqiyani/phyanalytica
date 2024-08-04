@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
+  name: "Phyanalytica",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
@@ -9,20 +9,16 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Solution",
+      href: "/solution",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Portfolio",
+      href: "/portfolio",
     },
     {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: "Contact Us",
+      href: "/contact",
     },
   ],
   navMenuItems: [

@@ -1,0 +1,25 @@
+.client-logos-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  white-space: nowrap; /* Ensures items stay in a single row */
+  animation: scroll 30s linear infinite;
+}
+
+.logo {
+  flex: 0 0 auto;
+  margin-right: 50px; /* 50px gap between logos */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
