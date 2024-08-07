@@ -30,7 +30,7 @@ const imgButtons = [
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-4 md:py-10">
+    <section className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
       <div className="flex w-full h-screen">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
       </div>
 
-      <div className="container mx-auto -mt-32">
+      <div className="container mx-auto -mt-32 pt-16">
       <ContentImg
         topText="WHO WE ARE"
         bottomText="Get to know us"

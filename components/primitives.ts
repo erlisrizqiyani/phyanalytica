@@ -5,7 +5,7 @@ export const title = tv({
   base: "tracking-tight inline",
   variants: {
     color: {
-      white:"#FFFFFF",
+      white:"from-[#FFFFFF] to-[#FFFFFF]",
       black:"from-[#000000] to-[#000000]",
       violet: "from-[#5327B0] to-[#5327B0]",
       yellow: "from-[#FF705B] to-[#FFB457]",
@@ -51,7 +51,7 @@ export const title = tv({
 });
 
 export const subtitle = tv({
-  base: "tracking-tight-negative inline",
+  base: "tracking-tight-negative",
   variants: {
     color: {
       white:"#FFFFFF",

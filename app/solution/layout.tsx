@@ -1,12 +1,24 @@
-export default function DocsLayout({
+import ClientLogos from "@/components/client-logo";
+
+export default function Solution({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-lg text-center justify-center">
-        {children}
+    <section className="container mx-auto max-w-7xl pt-16 px-6 gap-8 flex-grow">
+      <div className="flex w-full ">
+      <img
+          className="absolute top-0 left-0 w-full sm:h-80 h-60 object-cover "
+          src="/Bg-header.png"
+        />
+        <div className="absolute left-0 top-60 lg:mt-20 md:mt-20 w-full">
+        <ClientLogos/>
+      </div>
+      </div>
+      <div>
+      {children}
+
       </div>
     </section>
   );

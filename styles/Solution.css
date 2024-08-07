@@ -1,0 +1,71 @@
+.full-width-image {
+  width: 100vw; /* Full viewport width */
+  height: 418px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay-text-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust text color as needed */
+}
+
+.overlay-text {
+  font-size: 82px; /* Set font size to 96px */
+  font-weight: 800; /* Set font weight to extra bold */
+}
+
+.overlay-subtext {
+  font-size: 28px; /* Set font size to 48px */
+  font-weight: 400; /* Set font weight to regular */
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .full-width-image {
+    height: 718px;
+  }
+  .overlay-text-container{
+    top: 25%;
+  }
+  .overlay-text {
+    font-size: 48px; /* Smaller font size for smaller screens */
+  }
+
+  .overlay-subtext {
+    font-size: 18px; /* Smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text-container{
+    top: 10%;
+  }
+  .overlay-text {
+    font-size: 32px; /* Even smaller font size for very small screens */
+  }
+
+  .overlay-subtext {
+    font-size: 12px; /* Even smaller font size for very small screens */
+    margin-top: 2px;
+  }
+}
+
+
