@@ -36,8 +36,15 @@ const FAQ: React.FC<FAQProps> = ({ faqs }) => {
       {faqs.map((item, index) => (
         <div key={index} className="border-b border-gray-200">
           <div
+            role="button"
+            tabIndex={0}
             className="flex justify-between items-center p-4 cursor-pointer"
             onClick={() => toggleFAQ(index)}
+            onKeyPress={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                toggleFAQ(index);
+              }
+            }}
           >
             <div className="flex items-center">
               <div className="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full mr-4">
