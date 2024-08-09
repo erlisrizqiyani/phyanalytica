@@ -12,9 +12,6 @@ export default function Portfolio({
           className="absolute top-0 left-0 w-full sm:h-80 h-60 object-cover "
           src="/Bg-header.png"
         />
-        <div className="absolute left-0 top-60 lg:mt-20 md:mt-20 w-full">
-        <ClientLogos/>
-      </div>
       </div>
       <div>
       {children}

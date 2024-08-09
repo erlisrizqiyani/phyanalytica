@@ -2,11 +2,12 @@ import React from "react";
 import "@/styles/ClientLogos.css"; // This will import the CSS for styling
 
 const logos = [
-  "/Home/Client.png", 
-  "/Home/Client.png",
-  "/Home/Client.png",
-  "/Home/Client.png",
-  "/Home/Client.png",
+  "/logoclient1.jpg", 
+  "/logoclient2.jpg",
+  "/logoclient1.jpg",
+  "/logoclient2.jpg",
+  "/logoclient1.jpg",
+  "/logoclient2.jpg",
 ];
 
 const ClientLogos = () => {

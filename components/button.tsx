@@ -7,6 +7,7 @@ interface ButtonProps {
   variant: "text" | "outlined" | "contained";
   color: "violet" | "white";
   children: React.ReactNode;
+  onClick?: () => void; // Add an optional onClick prop
 }
 
 const button = tv({
@@ -18,7 +19,7 @@ const button = tv({
       contained: "text-white",
     },
     color: {
-      violet: "text-purple-600 border-violet bg-white", // Mengganti purple dengan violet
+      violet: "text-purple-600 border-violet bg-white", // Using violet instead of purple
       white: "text-white border-white",
     },
   },
@@ -60,9 +61,9 @@ const button = tv({
   },
 });
 
-const Button: React.FC<ButtonProps> = ({ variant, color, children }) => {
+const Button: React.FC<ButtonProps> = ({ variant, color, children, onClick }) => {
   return (
-    <button className={clsx(button({ variant, color }))}>
+    <button onClick={onClick} className={clsx(button({ variant, color }))}>
       {children}
       {variant === "text" && <ArrowRightIcon className="ml-2 h-5 w-9 mt-1" />}
     </button>
