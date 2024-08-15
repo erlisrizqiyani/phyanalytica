@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ContentImg from "@/components/content-img";
 import ContentTitle from "@/components/content-title";
 import Footer from "@/components/footer";
@@ -7,6 +7,7 @@ import { FaDatabase, FaChartPie, FaCogs, FaMagic, FaShieldAlt, FaTools, FaClipbo
 import "@/styles/Solution.css";
 import { title } from "@/components/primitives";
 import FAQ from "@/components/faq";
+import Tools from "@/components/tools";
 
 interface FAQItem {
   title: string;
@@ -14,7 +15,19 @@ interface FAQItem {
   icon: React.ReactNode;
 }
 
+
 export default function Solution() {
+  const whoweare = useRef<HTMLDivElement>(null);
+  const ouroffer = useRef<HTMLDivElement>(null);
+  const ourservices = useRef<HTMLDivElement>(null);
+  const ourtech = useRef<HTMLDivElement>(null);
+
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   const [faqs, setFaqs] = useState<FAQItem[]>([
     { title: 'Data Strategy',
       content: [
@@ -100,7 +113,7 @@ export default function Solution() {
           <h1 className="overlay-subtext -mt-4">Comprehensive Data Consulting Services</h1>
       </div>
       
-      <div className="container mx-auto mt-80">
+      <div className="container mx-auto mt-80" onClick={() => scrollToSection(whoweare)}>
         <ContentImg
         topText="WHO WE ARE"
         bottomText="Data Insight Consultation"
@@ -112,18 +125,21 @@ export default function Solution() {
         />
       </div>
 
-      <div className="banner-container relative mt-32">
+      <div className="banner-container relative mt-32" onClick={() => scrollToSection(ouroffer)}>
         <img src="/Our Offer.png" alt="Banner" className="banner-image" />
       </div>
 
-      <div className="mt-32">
+      <div className="mt-32" onClick={() => scrollToSection(ourservices)}>
       <ContentTitle topText="WHAT WE OFFER" bottomText="Data Consulting Services" alignment="center" bottomTextSize="black48" highlightedWord="services"/>
       <FAQ
           faqs={faqs}
         />
       </div>
+      <div onClick={() => scrollToSection(ourtech)}>
+      <Tools />
+      </div>
 
-      <div className="absolute left-0 w-full mt-8">
+      <div className="absolute left-0 w-full mt-32">
       <Footer/>
     </div>
     </section>

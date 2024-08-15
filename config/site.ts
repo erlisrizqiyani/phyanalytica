@@ -11,6 +11,12 @@ export const siteConfig = {
     {
       label: "Solution",
       href: "/solution",
+      submenu: [
+        {label: 'Who We Are', href:''},
+        {label: 'Our Offer', href:''},
+        {label: 'Our Services', href:''},
+        {label: 'Technology We Use', href:''},
+      ]
     },
     {
       label: "Portfolio",

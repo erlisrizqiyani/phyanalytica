@@ -38,7 +38,7 @@ const Footer = () => {
                 alt="Indonesia Flag"
                 className="w-5 h-5 mr-2"
               />
-              <span>Jalan Kaliurang km 5 no 7A</span>
+              <span>Jalan Kaliurang, KM 5 No.7A, DIY, Indonesia</span>
             </div>
           </div>
           <div className="space-y-2">
