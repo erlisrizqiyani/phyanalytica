@@ -17,17 +17,7 @@ interface FAQItem {
 
 
 export default function Solution() {
-  const whoweare = useRef<HTMLDivElement>(null);
-  const ouroffer = useRef<HTMLDivElement>(null);
-  const ourservices = useRef<HTMLDivElement>(null);
-  const ourtech = useRef<HTMLDivElement>(null);
 
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  
   const [faqs, setFaqs] = useState<FAQItem[]>([
     { title: 'Data Strategy',
       content: [
@@ -113,7 +103,7 @@ export default function Solution() {
           <h1 className="overlay-subtext -mt-4">Comprehensive Data Consulting Services</h1>
       </div>
       
-      <div className="container mx-auto mt-80" onClick={() => scrollToSection(whoweare)}>
+      <div className="container mx-auto mt-80">
         <ContentImg
         topText="WHO WE ARE"
         bottomText="Data Insight Consultation"
@@ -125,17 +115,17 @@ export default function Solution() {
         />
       </div>
 
-      <div className="banner-container relative mt-32" onClick={() => scrollToSection(ouroffer)}>
+      <div className="banner-container relative mt-32">
         <img src="/Our Offer.png" alt="Banner" className="banner-image" />
       </div>
 
-      <div className="mt-32" onClick={() => scrollToSection(ourservices)}>
+      <div className="mt-32">
       <ContentTitle topText="WHAT WE OFFER" bottomText="Data Consulting Services" alignment="center" bottomTextSize="black48" highlightedWord="services"/>
       <FAQ
           faqs={faqs}
         />
       </div>
-      <div onClick={() => scrollToSection(ourtech)}>
+      <div>
       <Tools />
       </div>
 
