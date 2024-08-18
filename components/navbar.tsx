@@ -15,11 +15,11 @@ import { Link as NextUILink } from "@nextui-org/link";
 import clsx from "clsx";
 import "@/styles/globals.css";
 import LogoIcon, { SearchIcon } from "@/components/icons";
-
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [activeMenu, setActiveMenu] = useState<number | null>(null); // Menentukan tipe state
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,6 +36,18 @@ export const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleMenuClick = (index: number, href?: string) => {
+    const item = siteConfig.navItems[index];
+    
+    if (item.subItems) {
+      // Jika item memiliki sub-items, toggle sub-items
+      setActiveMenu(activeMenu === index ? null : index);
+    } else if (href) {
+      // Jika tidak ada sub-items, navigasikan ke href
+      window.location.href = href;
+    }
+  };
 
   const searchInput = (
     <Input
@@ -69,19 +81,30 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="basis-3/5 sm:basis-3/5" justify="center">
-        <ul className="hidden lg:flex gap-6 justify-center ml-2">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <NextLink
+        <ul className="hidden lg:flex gap-6 justify-center ml-2 relative">
+          {siteConfig.navItems.map((item, index) => (
+            <NavbarItem key={index} className="relative">
+              <span
                 className={clsx(
-                  "nav-item",
+                  "nav-item cursor-pointer",
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
                   "hover:text-purple-500"
                 )}
-                href={item.href}
+                onClick={() => handleMenuClick(index, item.href)}
               >
                 {item.label}
-              </NextLink>
+              </span>
+              {activeMenu === index && item.subItems && (
+                <ul className="absolute bg-white text-black shadow-lg rounded-md mt-2 w-56 p-8">
+                  {item.subItems.map((subItem, subIndex) => (
+                    <li key={subIndex} className="p-2 hover:bg-gray-100">
+                      <NextLink href={subItem.href}>
+                        {subItem.label}
+                      </NextLink>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </NavbarItem>
           ))}
         </ul>

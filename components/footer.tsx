@@ -65,21 +65,18 @@ const Footer = () => {
         <div className="hidden md:block ml-auto text-center">
           <h4 className="font-bold mb-4">Solution</h4>
           <ul className="space-y-2">
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>Solution</li>
-            <li>Industries</li>
-            <li>Client</li>
+            <li>Who We Are</li>
+            <li>Our Offer</li>
+            <li>Our Services</li>
+            <li>Technology We Use</li>
           </ul>
         </div>
         <div className="hidden md:block ml-auto text-center">
           <h4 className="font-bold mb-4">Portfolio</h4>
           <ul className="space-y-2">
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>Solution</li>
-            <li>Industries</li>
-            <li>Client</li>
+            <li>Time Series Analysis</li>
+            <li>Ocr Tools</li>
+            <li>Dynamic Pricing</li>
           </ul>
         </div>
       </div>
@@ -88,9 +85,9 @@ const Footer = () => {
           © 2024 Phyanalytica, All Rights Reserved
         </div>
         <div className="flex space-x-4">
-          <p >Tentang Kami</p>
-          <p >Kontak</p>
-          <p >Privasi & Policy</p>
+          <p >About Us</p>
+          <p >Contact</p>
+          <p >Privacy & Policy</p>
         </div>
       </div>
     </footer>

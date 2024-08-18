@@ -11,16 +11,21 @@ export const siteConfig = {
     {
       label: "Solution",
       href: "/solution",
-      submenu: [
-        {label: 'Who We Are', href:''},
-        {label: 'Our Offer', href:''},
-        {label: 'Our Services', href:''},
-        {label: 'Technology We Use', href:''},
+      subItems: [
+        {label: 'Who We Are', href:'/solution'},
+        {label: 'Our Offer', href:'/solution'},
+        {label: 'Our Services', href:'/solution'},
+        {label: 'Technology We Use', href:'/solution'},
       ]
     },
     {
       label: "Portfolio",
       href: "/portfolio",
+      subItems: [
+        { label: "Time Series Analysis", href: "/portfolio" },
+        { label: "Ocr Tools", href: "/portfolio" },
+        { label: "Dynamic Pricing", href: "/portfolio" },
+      ],
     },
     {
       label: "Contact Us",

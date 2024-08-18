@@ -9,23 +9,34 @@ import Footer from "@/components/footer";
 import { FaDatabase, FaChartPie, FaCogs, FaMagic, FaShieldAlt, FaTools, FaClipboardCheck } from 'react-icons/fa';
 
 const contentItems = [
-  { icon: <FaDatabase size={24} />, title: 'Data Strategy', description: 'Aliquam vehicula pellentesque id mi quam ipsum arcu nisl faucibus.' },
-  { icon: <FaChartPie size={24} />, title: 'Data Visualization', description: 'Velit nulla eu tortor elit sed. Volutpat ornare mi tempor, hac morbi faucibus.' },
-  { icon: <FaCogs size={24} />, title: 'Data Management', description: 'Lobortis adipiscing sit senectus id. Rhoncus lacus mi aliquam tortor nibh.' },
-  { icon: <FaMagic size={24} />, title: 'Data Modelling And Prediction', description: 'Lobortis adipiscing sit senectus id. Rhoncus lacus mi aliquam tortor nibh.' },
-  { icon: <FaShieldAlt size={24} />, title: 'Data Audit', description: 'Turpis eget ut sed vitae in sapien egestas ultrices feugiat elementum platea.' },
-  { icon: <FaTools size={24} />, title: 'Data Transformation', description: 'Amet eros nisl vestibulum tincidunt pellentesque congue id sapien dictum a.' },
-  { icon: <FaClipboardCheck size={24} />, title: 'Data Engineering And ETL', description: 'Tristique viverra lorem nibh eget tellus eget morbi porttitor faucibus sit.' },
+  { icon: <FaDatabase size={24} />, title: 'Data Strategy', description: 'Aligns data management with business goals to drive informed decision-making and achieve strategic objectives' },
+  { icon: <FaChartPie size={24} />, title: 'Data Visualization', description: 'Transforms complex data into visual formats, making patterns and insights easier to understand and interpret' },
+  { icon: <FaCogs size={24} />, title: 'Data Management', description: 'Involves organizing, storing, and maintaining data to ensure its accuracy, accessibility, and security' },
+  { icon: <FaMagic size={24} />, title: 'Data Modelling And Prediction', description: 'Use statistical and machine learning techniques to analyze historical data and forecast future trends and outcomes' },
+  { icon: <FaShieldAlt size={24} />, title: 'Data Audit', description: 'Systematically reviews and evaluates data accuracy, consistency, and compliance to ensure reliability and integrity' },
+  { icon: <FaTools size={24} />, title: 'Data Transformation', description: 'Involves converting data from its original format into a structured format suitable for analysis and reporting' },
+  { icon: <FaClipboardCheck size={24} />, title: 'Data Engineering And ETL', description: 'Designing and managing data pipelines to extract data from sources, transform it into a usable format, and load it into storage systems for analysis' },
 ];
 
 
 const imgButtons = [
-  { imageSrc: "/Home/Industri_Healthcare.jpg", title: "Bank and Finance", buttonLabels: ["Data Organization", "Data Digitalization", "Risk Analysis", "Regulatory Compliance", "Customer Insights"] },
-  { imageSrc: "/Home/Industri_Healthcare.jpg", title: "Technology", buttonLabels: ["Development", "Operations", "IT Security", "Cloud Services", "Tech Support"] },
-  { imageSrc: "/Home/Industri_Travel.jpg", title: "Healthcare", buttonLabels: ["Patient Care", "Medical Records", "Compliance", "Research", "Insurance"] },
-  { imageSrc: "/Home/Industri_Retail.jpg", title: "Retail", buttonLabels: ["Sales", "Customer Service", "Inventory Management", "Supply Chain", "Marketing"] },
-  { imageSrc: "/Home/Industri_Manufacturing.jpg", title: "Education", buttonLabels: ["Teaching", "Admissions", "Student Services", "Research", "Administration"] },
-  { imageSrc: "/Home/Industri_Insurance.jpg", title: "Transportation", buttonLabels: ["Logistics", "Fleet Management", "Safety Regulations", "Ticketing Systems", "Customer Relations"] }
+  { imageSrc: "/Home/Industri_Bank.jpg", title: "Bank and Finance",
+    buttonLabels: ["Data Organization", "Data Digitalization", "Risk Analysis", "Regulatory Compliance", "Customer Insights"] },
+
+  { imageSrc: "/Home/Industri_Healthcare.jpg", title: "Healthcare",
+    buttonLabels: ["Data Organization", "Data Digitalization", "Healthcare CRM", "Data Analytics"] },
+
+  { imageSrc: "/Home/Industri_Travel.jpg", title: "Travel",
+    buttonLabels: ["Predictive Analysis", "Data Organization", "Customer Insights", "Digitalization"] },
+
+  { imageSrc: "/Home/Industri_Retail.jpg", title: "Retail",
+    buttonLabels: ["Predictive Analytics", "Customer Insights", "Sales Analysis", "Digital Marketing", "CRM Implementation"] },
+
+  { imageSrc: "/Home/Industri_Manufacturing.jpg", title: "Manufacturing",
+    buttonLabels: ["Supply Chain Optimization", "Predictive Maintenance", "Production Efficiency", "Quality Control", "Inventory Management"] },
+    
+  { imageSrc: "/Home/Industri_Insurance.jpg", title: "Insurance",
+    buttonLabels: ["Risk Analysis", "Fraud Detection", "Customer Insights", "Claims Management", "Regulatory Compliance"] }
 ];
 
 export default function Home() {
@@ -93,7 +104,7 @@ export default function Home() {
         bottomText="The Importance of Digitization and Data Management"
         alignment="left"
         imageSrc="/Home/Content3.jpg"
-        description="By leveraging the advanced technologies of Google Cloud and Amazon Web Services (AWS), we ensure that your data remains secure and protected. We comply with data privacy standards such as GDPR and CCPA, implement high-level encryption for data-at-rest and data-in-transit, and conduct regular security audits."
+        description="Digitization converts physical records into digital formats, making them more accessible and efficient. Effective data management ensures this information is accurate, secure, and easily available, driving better decision-making and operational efficiency. Adopting these practices enhances competitiveness and supports strategic growth."
         highlightedWord = "Importance"
       />
     </div>
