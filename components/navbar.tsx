@@ -83,8 +83,9 @@ export const Navbar = () => {
       <NavbarContent className="basis-3/5 sm:basis-3/5" justify="center">
         <ul className="hidden lg:flex gap-6 justify-center ml-2 relative">
           {siteConfig.navItems.map((item, index) => (
-            <NavbarItem key={index} className="relative">
-              <span
+            <NavbarItem key={index} className="relative" >
+              <button
+                type="button"
                 className={clsx(
                   "nav-item cursor-pointer",
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
@@ -93,7 +94,7 @@ export const Navbar = () => {
                 onClick={() => handleMenuClick(index, item.href)}
               >
                 {item.label}
-              </span>
+              </button>
               {activeMenu === index && item.subItems && (
                 <ul className="absolute bg-white text-black shadow-lg rounded-md mt-2 w-56 p-8">
                   {item.subItems.map((subItem, subIndex) => (
