@@ -9,10 +9,11 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
+
 const Footer = () => {
   return (
-    <footer className="bg-purple-900 text-white py-10">
-      <div className="container px-32 mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    <footer className="lg:px-32 sm:px-8 md:px-28 bg-purple-900 text-white py-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <div className="flex items-center mb-4">
             <img
@@ -44,11 +45,11 @@ const Footer = () => {
           <div className="space-y-2">
             <div className="flex items-center">
               <FaPhone className="w-5 h-5 mr-2" />
-              <span>0851-5616-2840</span>
+              <span>+49 157 3155 4563</span>
             </div>
             <div className="flex items-center">
               <FaEnvelope className="w-5 h-5 mr-2" />
-              <span>syayakay@gmail.com</span>
+              <span>partner@phyanalytic.com</span>
             </div>
           </div>
         </div>
@@ -80,7 +81,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="container px-32 mx-auto flex justify-between items-center mt-8">
+      <div className="container mx-auto flex justify-between items-center mt-8">
         <div className="flex space-x-4">
           © 2024 Phyanalytica, All Rights Reserved
         </div>

@@ -27,12 +27,14 @@ const ContentImg: React.FC<ContentImgProps> = ({
     <div
       className={clsx(
         "flex",
-        { "flex-row-reverse": reverse, "flex-row": !reverse },
+        "flex-col", // Stack items vertically by default
+        { "md:flex-row": !reverse, "md:flex-row-reverse": reverse }, // Switch to horizontal layout on medium screens and up
         "items-center",
-        "my-2", "gap-10",
+        "my-2",
+        "gap-10",
       )}
     >
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2">
         <ContentTitle
           topText={topText}
           bottomText={bottomText}
@@ -45,7 +47,7 @@ const ContentImg: React.FC<ContentImgProps> = ({
           {buttonText}
         </Button>
       </div>
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2">
         <img
           src={imageUrl}
           alt={bottomText}

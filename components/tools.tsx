@@ -46,7 +46,10 @@ export default function Tools() {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-8 mt-16">
-      <h2 className="text-4xl font-bold mb-8">Our Technology</h2>
+      <h2 className="text-4xl font-bold mb-4">Our Technology</h2>
+      <p className="text-center text-lg max-w-4xl">
+        Our company adopts a technology-agnostic approach to leverage the best tools for each specific task. Our technology stack includes, but is not limited to:
+      </p>
       <div className="relative flex flex-wrap justify-center items-center gap-12">
         {tools.map((tool, index) => (
           <div

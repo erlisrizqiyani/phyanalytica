@@ -12,28 +12,22 @@
 
 .logo {
   flex: 0 0 auto;
-  margin-right: 50px; /* 50px gap between logos */
+  margin-right: 30px; /* 50px gap between logos */
 }
-
 @keyframes scroll {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%); /* Geser setengah dari lebar total elemen */
   }
-}
-
-.client-logos-container {
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .logo {
   display: inline-block;
   width: 150px; /* Set the width of the logo */
   height: 50px; /* Set the height of the logo */
-  margin-right: 16px; /* Optional: add some space between logos */
+  margin-right: 10px; /* Optional: add some space between logos */
 }
 
 .logo img {

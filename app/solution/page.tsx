@@ -119,11 +119,14 @@ export default function Solution() {
         <img src="/Our Offer.png" alt="Banner" className="banner-image" />
       </div>
 
-      <div className="mt-32">
+      <div className="my-32">
       <ContentTitle topText="WHAT WE OFFER" bottomText="Data Consulting Services" alignment="center" bottomTextSize="black48" highlightedWord="services"/>
+      <div className="mt-8">
       <FAQ
           faqs={faqs}
         />
+      </div>
+      
       </div>
       <div>
       <Tools />

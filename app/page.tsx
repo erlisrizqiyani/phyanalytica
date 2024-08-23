@@ -6,6 +6,7 @@ import ImgButton from '@/components/img-button';
 import ContentTitle from "@/components/content-title";
 import ClientLogos from "@/components/client-logo";
 import Footer from "@/components/footer";
+import CookieConsent from '@/components/cookie';
 import { FaDatabase, FaChartPie, FaCogs, FaMagic, FaShieldAlt, FaTools, FaClipboardCheck } from 'react-icons/fa';
 
 const contentItems = [
@@ -130,6 +131,7 @@ export default function Home() {
       <Footer/>
     </div>
     </div>
+    <CookieConsent />
     
 
       <style>{`
