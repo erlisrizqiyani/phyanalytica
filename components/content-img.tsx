@@ -1,7 +1,6 @@
 import React from "react";
 import ContentTitle from "./content-title";
 import clsx from "clsx";
-import { subtitle, title } from "@/components/primitives";
 import Button from "@/components/button";
 
 interface ContentImgProps {
@@ -12,6 +11,7 @@ interface ContentImgProps {
   buttonText: string;
   imageUrl: string;
   reverse?: boolean;
+  buttonHref?: string; // Optional buttonHref for later use
 }
 
 const ContentImg: React.FC<ContentImgProps> = ({
@@ -22,13 +22,14 @@ const ContentImg: React.FC<ContentImgProps> = ({
   buttonText,
   imageUrl,
   reverse = false,
+  buttonHref, // Optional buttonHref
 }) => {
   return (
     <div
       className={clsx(
         "flex",
-        "flex-col", // Stack items vertically by default
-        { "md:flex-row": !reverse, "md:flex-row-reverse": reverse }, // Switch to horizontal layout on medium screens and up
+        "flex-col",
+        { "md:flex-row": !reverse, "md:flex-row-reverse": reverse },
         "items-center",
         "my-2",
         "gap-10",
@@ -43,7 +44,7 @@ const ContentImg: React.FC<ContentImgProps> = ({
           highlightedWord={highlightedWord}
         />
         <p className="text-gray-600 my-4 mb-32 mr-2">{description}</p>
-        <Button variant="text" color="violet">
+        <Button variant="text" color="violet" href={buttonHref}>
           {buttonText}
         </Button>
       </div>

@@ -47,7 +47,7 @@ export default function Portfolio() {
         <h2 className="overlay-subtext -mt-4">Comprehensive Data Consulting Services</h2>
       </div>
 
-      <div className="container mx-auto mt-60">
+      <div className="container mx-auto mt-60" >
         <div className=" grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <Card
             imageSrc="/Portfolio/Portfolio_Time.jpg"
@@ -77,7 +77,7 @@ export default function Portfolio() {
 
         
       </div>
-      <div ref={section1Ref} className="mt-24">
+      <div ref={section1Ref} className="pt-24" id="port-time">
           <div className="mb-2">
           <ContentTitle
             topText="Portfolio"
@@ -103,7 +103,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div ref={section2Ref} className="mt-4">
+        <div ref={section2Ref} className="pt-4" id="port-ocr">
         <div className="mb-2">
           <ContentTitle
             topText="Portfolio"
@@ -122,7 +122,7 @@ export default function Portfolio() {
           <OcrTools/>
         </div>
 
-        <div ref={section3Ref} className="mt-4">
+        <div ref={section3Ref} className="pt-4" id="port-pricing">
         <div className="mb-2">
           <ContentTitle
             topText="Portfolio"

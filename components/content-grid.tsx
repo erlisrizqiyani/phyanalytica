@@ -31,7 +31,7 @@ const ContentItem: React.FC<ContentItemProps> = ({
         <h3 className={subtitle({ color: "black", size: "semiBold24" })}>
           {title}
         </h3>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 mt-2">{description}</p>
       </div>
     </div>
   );

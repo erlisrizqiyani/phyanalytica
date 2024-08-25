@@ -7,7 +7,7 @@ import { Navbar } from "@/components/navbar";
 import { Providers } from "./providers";
 import localFont from 'next/font/local';
 const myFont = localFont({
-  src: './fonts/orkney-light-webfont.ttf',
+  src: './fonts/Poppins-Light.ttf',
   display: 'swap',
 })
 

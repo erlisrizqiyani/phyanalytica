@@ -2,7 +2,7 @@ import { tv } from "tailwind-variants";
 import "@/styles/globals.css";
 
 export const title = tv({
-  base: "tracking-tight inline",
+  base: "tracking-wide inline",
   variants: {
     color: {
       white:"from-[#FFFFFF] to-[#FFFFFF]",

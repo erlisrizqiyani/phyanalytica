@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -12,26 +12,22 @@ import {
 import { Input } from "@nextui-org/input";
 import NextLink from "next/link";
 import { Link as NextUILink } from "@nextui-org/link";
-import clsx from "clsx";
 import "@/styles/globals.css";
 import LogoIcon, { SearchIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [activeMenu, setActiveMenu] = useState<number | null>(null); // Menentukan tipe state
+  const [activeMenu, setActiveMenu] = useState<number | null>(null);
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
+  const submenuRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -41,11 +37,38 @@ export const Navbar = () => {
     const item = siteConfig.navItems[index];
     
     if (item.subItems) {
-      // Jika item memiliki sub-items, toggle sub-items
       setActiveMenu(activeMenu === index ? null : index);
     } else if (href) {
-      // Jika tidak ada sub-items, navigasikan ke href
       window.location.href = href;
+    }
+  };
+
+  const handleMouseLeave = (
+    event: React.MouseEvent<HTMLUListElement, MouseEvent>
+  ) => {
+    if (submenuRef.current) {
+      const rect = submenuRef.current.getBoundingClientRect();
+
+      if (timeoutId) clearTimeout(timeoutId);
+
+      const newTimeoutId = setTimeout(() => {
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+        const distanceX = Math.min(
+          Math.abs(mouseX - rect.left),
+          Math.abs(mouseX - rect.right)
+        );
+        const distanceY = Math.min(
+          Math.abs(mouseY - rect.top),
+          Math.abs(mouseY - rect.bottom)
+        );
+
+        if (distanceX > 50 || distanceY > 50) {
+          setActiveMenu(null);
+        }
+      }, 100);
+
+      setTimeoutId(newTimeoutId);
     }
   };
 
@@ -83,20 +106,20 @@ export const Navbar = () => {
       <NavbarContent className="basis-3/5 sm:basis-3/5" justify="center">
         <ul className="hidden lg:flex gap-6 justify-center ml-2 relative">
           {siteConfig.navItems.map((item, index) => (
-            <NavbarItem key={index} className="relative" >
+            <NavbarItem key={index} className="relative">
               <button
                 type="button"
-                className={clsx(
-                  "nav-item cursor-pointer",
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
-                  "hover:text-purple-500"
-                )}
+                className="nav-item cursor-pointer hover:text-purple-500"
                 onClick={() => handleMenuClick(index, item.href)}
               >
                 {item.label}
               </button>
               {activeMenu === index && item.subItems && (
-                <ul className="absolute bg-white text-black shadow-lg rounded-md mt-2 w-56 p-8">
+                <ul
+                  ref={submenuRef}
+                  onMouseLeave={(event) => handleMouseLeave(event)}
+                  className="absolute bg-white text-black shadow-lg rounded-md mt-2 w-56 p-8"
+                >
                   {item.subItems.map((subItem, subIndex) => (
                     <li key={subIndex} className="p-2 hover:bg-gray-100">
                       <NextLink href={subItem.href}>
@@ -116,8 +139,7 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        <NavbarItem className="hidden md:flex">
-        </NavbarItem>
+        <NavbarItem className="hidden md:flex"></NavbarItem>
       </NavbarContent>
 
       <NavbarMenu>

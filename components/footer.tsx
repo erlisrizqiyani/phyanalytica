@@ -56,28 +56,27 @@ const Footer = () => {
         <div className="hidden md:block ml-auto text-center">
           <h4 className="font-bold mb-4">Home</h4>
           <ul className="space-y-2">
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>Solution</li>
-            <li>Industries</li>
-            <li>Client</li>
+            <li><a href="/home#home-whatwedo">About Us</a></li>
+            <li><a href="/home#home-didyouknow">What We Do</a></li>
+            <li><a href="/home#home-industries">Industries</a></li>
+            <li><a href="/home#home-client">Client</a></li>
           </ul>
         </div>
         <div className="hidden md:block ml-auto text-center">
           <h4 className="font-bold mb-4">Solution</h4>
           <ul className="space-y-2">
-            <li>Who We Are</li>
-            <li>Our Offer</li>
-            <li>Our Services</li>
-            <li>Technology We Use</li>
+            <li><a href="/solution#sol-whoweare">Who We Are</a></li>
+            <li><a href="/solution#sol-offer">Our Offer</a></li>
+            <li><a href="/solution#sol-services">Our Services</a></li>
+            <li><a href="/solution#sol-tech">Technology We Use</a></li>
           </ul>
         </div>
         <div className="hidden md:block ml-auto text-center">
           <h4 className="font-bold mb-4">Portfolio</h4>
           <ul className="space-y-2">
-            <li>Time Series Analysis</li>
-            <li>Ocr Tools</li>
-            <li>Dynamic Pricing</li>
+            <li><a href="/portfolio#port-time">Time Series Analysis</a></li>
+            <li><a href="/portfolio#port-ocr">OCR Tools</a></li>
+            <li><a href="/portfolio#port-pricing">Dynamic Pricing</a></li>
           </ul>
         </div>
       </div>

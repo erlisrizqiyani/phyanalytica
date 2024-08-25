@@ -60,20 +60,21 @@ export default function Home() {
           </div>
       </div>
 
-      <div className="container mx-auto -mt-32 pt-16">
+      <div className="container mx-auto -mt-32 pt-16" id="home-whoweare">
       <ContentImg
         topText="WHO WE ARE"
         bottomText="Get to know us"
         highlightedWord = ""
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description="Phyanalytica specialize in providing comprehensive consulting services for data analysis, guiding businesses through every stage of the process. From initial strategy and auditing to designing robust data architectures and implementing cutting-edge technology solutions, our goal is to empower organizations with data-driven insights. Our expertise extends across various facets of data science, including security, compliance, and machine learning, ensuring that our clients receive secure, compliant, and highly effective solutions tailored to their needs."
         buttonText="Read more"
         imageUrl="/Home/img-about.jpg"
+        buttonHref="/solution#sol-whoweare"
       />
       </div>
 
     <div>
 
-    <div className="container mx-auto p-4 mt-20">
+    <div className="container mx-auto p-4 mt-20" id="home-whatwedo">
       <ContentGrid
         topText="WHAT WE DO"
         bottomText="Perfect Solution to your business growth"
@@ -82,7 +83,7 @@ export default function Home() {
       />
     </div>
 
-    <div className="container mx-auto p-4 mt-32">
+    <div className="container mx-auto p-4 mt-20" id="home-didyouknow">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       <ContentCard
         topText="DID YOU KNOW"
@@ -111,7 +112,7 @@ export default function Home() {
     </div>
     </div>
 
-    <div className="container mx-auto px-4 py-4 mt-32">
+    <div className="container mx-auto px-4 py-4 mt-32" id="home-industries">
     <ContentTitle topText="OUR SPECIALIZATION" bottomText="Industries we work in" alignment="center" bottomTextSize="black48" />
     <hr className="border-t-2 border-purple-200 my-8" />
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
@@ -121,7 +122,7 @@ export default function Home() {
     </div>
     </div>
 
-    <div className="my-32">
+    <div className="my-32" id="home-client">
       <ContentTitle topText="TRUSTED BY" bottomText="Leading Brand" alignment="center" bottomTextSize="black48" />
       <div className="absolute left-0 w-full mt-8">
       <ClientLogos/>

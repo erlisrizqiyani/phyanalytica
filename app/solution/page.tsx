@@ -103,7 +103,7 @@ export default function Solution() {
           <h1 className="overlay-subtext -mt-4">Comprehensive Data Consulting Services</h1>
       </div>
       
-      <div className="container mx-auto mt-80">
+      <div className="container mx-auto pt-80" id="sol-whoweare">
         <ContentImg
         topText="WHO WE ARE"
         bottomText="Data Insight Consultation"
@@ -112,15 +112,23 @@ export default function Solution() {
         To get an insight, you need an expert, sit relax and get the reports about your business within days. "
         buttonText="Contact us"
         imageUrl="/Home/img-about.jpg"
+        buttonHref="/contact"
         />
       </div>
 
+      <div className="pt-32" id="sol-offer">
+        <ContentTitle topText="WHAT WE OFFER" bottomText="Our Expertise" alignment="center" bottomTextSize="black48" highlightedWord="services"/>
+        <p className="text-center justify-center text-2xl mt-8">
+        At Phyanalytica, we offer a range of consulting services for data analysis. We assist businesses throughout the process, from strategizing and auditing to designing architectures and implementing the best technology solutions. Our expertise in data science consulting covers areas such as security, compliance, and machine learning, ensuring robust and effective solutions.
+        </p>
+      </div>
+{/* 
       <div className="banner-container relative mt-32">
         <img src="/Our Offer.png" alt="Banner" className="banner-image" />
-      </div>
+      </div> */}
 
-      <div className="my-32">
-      <ContentTitle topText="WHAT WE OFFER" bottomText="Data Consulting Services" alignment="center" bottomTextSize="black48" highlightedWord="services"/>
+      <div className="pt-32" id="sol-services">
+      <ContentTitle topText="OUR SERVICES" bottomText="Data Consulting Services" alignment="center" bottomTextSize="black48" highlightedWord="services"/>
       <div className="mt-8">
       <FAQ
           faqs={faqs}
@@ -128,7 +136,7 @@ export default function Solution() {
       </div>
       
       </div>
-      <div>
+      <div className= "pt-20" id="sol-tech">
       <Tools />
       </div>
 

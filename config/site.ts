@@ -12,19 +12,19 @@ export const siteConfig = {
       label: "Solution",
       href: "/solution",
       subItems: [
-        {label: 'Who We Are', href:'/solution'},
-        {label: 'Our Offer', href:'/solution'},
-        {label: 'Our Services', href:'/solution'},
-        {label: 'Technology We Use', href:'/solution'},
+        {label: 'Who We Are', href:'/solution#sol-whoweare'},
+        {label: 'Our Offer', href:'/solution#sol-offer'},
+        {label: 'Our Services', href:'/solution#sol-services'},
+        {label: 'Technology We Use', href:'/solution#sol-tech'},
       ]
     },
     {
       label: "Portfolio",
       href: "/portfolio",
       subItems: [
-        { label: "Time Series Analysis", href: "/portfolio" },
-        { label: "Ocr Tools", href: "/portfolio" },
-        { label: "Dynamic Pricing", href: "/portfolio" },
+        { label: "Time Series Analysis", href: "/portfolio#port-time" },
+        { label: "OCR Tools", href: "/portfolio#port-ocr" },
+        { label: "Dynamic Pricing", href: "/portfolio#port-pricing" },
       ],
     },
     {
@@ -34,36 +34,20 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Home",
+      href: "/home",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Solution",
+      href: "/solution",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Portfolio",
+      href: "/portfolio",
     },
     {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contact Us",
+      href: "/contact",
     },
   ],
   links: {

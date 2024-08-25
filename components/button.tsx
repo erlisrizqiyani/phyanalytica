@@ -2,12 +2,14 @@ import React from "react";
 import clsx from "clsx";
 import { tv } from "tailwind-variants";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import Link from "next/link"; // Import Next.js Link
 
 interface ButtonProps {
   variant: "text" | "outlined" | "contained";
   color: "violet" | "white";
   children: React.ReactNode;
-  onClick?: () => void; // Add an optional onClick prop
+  onClick?: () => void; // Optional onClick handler
+  href?: string; // Optional href for navigation
 }
 
 const button = tv({
@@ -19,7 +21,7 @@ const button = tv({
       contained: "text-white",
     },
     color: {
-      violet: "text-purple-600 border-violet bg-white", // Using violet instead of purple
+      violet: "text-purple-600 border-violet bg-white",
       white: "text-white border-white",
     },
   },
@@ -61,9 +63,20 @@ const button = tv({
   },
 });
 
-const Button: React.FC<ButtonProps> = ({ variant, color, children, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ variant, color, children, onClick, href }) => {
+  if (href) {
+    return (
+      <Link href={href} passHref>
+        <button className={clsx(button({ variant, color }))} onClick={onClick}>
+          {children}
+          {variant === "text" && <ArrowRightIcon className="ml-2 h-5 w-9 mt-1" />}
+        </button>
+      </Link>
+    );
+  }
+
   return (
-    <button onClick={onClick} className={clsx(button({ variant, color }))}>
+    <button className={clsx(button({ variant, color }))} onClick={onClick}>
       {children}
       {variant === "text" && <ArrowRightIcon className="ml-2 h-5 w-9 mt-1" />}
     </button>
