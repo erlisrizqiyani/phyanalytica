@@ -12,7 +12,7 @@ export const siteConfig = {
       label: "Solution",
       href: "/solution",
       subItems: [
-        {label: 'Who We Are', href:'/solution#sol-whoweare'},
+        {label: 'Who We Are', href:'/solution'},
         {label: 'Our Offer', href:'/solution#sol-offer'},
         {label: 'Our Services', href:'/solution#sol-services'},
         {label: 'Technology We Use', href:'/solution#sol-tech'},
@@ -22,6 +22,7 @@ export const siteConfig = {
       label: "Portfolio",
       href: "/portfolio",
       subItems: [
+        { label: "Catalog", href: "/portfolio" },
         { label: "Time Series Analysis", href: "/portfolio#port-time" },
         { label: "OCR Tools", href: "/portfolio#port-ocr" },
         { label: "Dynamic Pricing", href: "/portfolio#port-pricing" },
