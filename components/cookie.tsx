@@ -7,10 +7,9 @@ const CookieConsent = () => {
 
   const acceptCookies = () => {
     setIsVisible(false);
-    localStorage.setItem("cookieConsent", "true");
   };
 
-  if (!isVisible || localStorage.getItem("cookieConsent") === "true") {
+  if (!isVisible) {
     return null;
   }
 
