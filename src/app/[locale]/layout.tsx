@@ -2,10 +2,12 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
-import { Providers } from "./providers";
+import { Providers } from "../providers";
 import localFont from 'next/font/local';
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
+
 const myFont = localFont({
   src: './fonts/Poppins-Light.ttf',
   display: 'swap',
@@ -28,11 +30,14 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: {locale}
 }: {
   children: React.ReactNode;
+  params: {locale: string};
 }) {
+  const messages = await getMessages();
   return (
     <html suppressHydrationWarning lang="en" className={myFont.className}>
       <head />
@@ -41,6 +46,7 @@ export default function RootLayout({
           "min-h-screen bg-background antialiased",
         )}
       >
+        <NextIntlClientProvider messages={messages}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="">
             <Navbar />
@@ -50,6 +56,8 @@ export default function RootLayout({
             <footer className="w-full flex items-center justify-center py-3">
             </footer>
           </div></Providers>
+        </NextIntlClientProvider>
+        
       </body>
     </html>
   );
