@@ -9,7 +9,6 @@ import ClientLogos from "@/components/client-logo";
 import Footer from "@/components/footer";
 import CookieConsent from "@/components/cookie";
 import { useTranslations } from "next-intl";
-import { Link } from "@nextui-org/link";
 import "@/styles/globals.css";
 
 import {

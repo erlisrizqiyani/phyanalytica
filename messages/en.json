@@ -48,5 +48,37 @@
       { "title": "Data Transformation", "description": "Involves converting data from its original format into a structured format suitable for analysis and reporting" },
       { "title": "Data Engineering And ETL", "description": "Designing and managing data pipelines to extract data from sources, transform it into a usable format, and load it into storage systems for analysis" }
     ]
+  },
+
+
+  "Solution":{
+    "title-main": "Phyanalytica",
+    "title-sub": "Comprehensive Data Consulting Services",
+    "contentImg1": {
+      "topText": "WHO WE ARE",
+      "bottomText": "Data Insight Consultation",
+      "description": "Dealing with huge and abundant data makes your team less productive. To get an insight, you need an expert, sit relax and get the reports about your business within days.",
+      "buttonText": "Contact us"
+    },
+    "ContentTitle1": {
+      "topText": "WHAT WE OFFER",
+      "bottomText": "Our Expertise",
+      "description": "At Phyanalytica, we offer a range of consulting services for data analysis. We assist businesses throughout the process, from strategizing and auditing to designing architectures and implementing the best technology solutions. Our expertise in data science consulting covers areas such as security, compliance, and machine learning, ensuring robust and effective solutions."
+    },
+    "ContentTitle2": {
+      "topText": "OUR SERVICES",
+      "bottomText": "Data Consulting Services"
+    }
+  },
+
+
+
+  "Portfolio": {
+
+  },
+
+
+  "Contact":{
+    
   }
 }

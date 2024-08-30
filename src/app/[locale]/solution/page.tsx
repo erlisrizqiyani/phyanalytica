@@ -3,6 +3,8 @@ import React, { useRef, useState } from "react";
 import ContentImg from "@/components/content-img";
 import ContentTitle from "@/components/content-title";
 import Footer from "@/components/footer";
+import { useTranslations } from "next-intl";
+
 import {
   FaDatabase,
   FaChartPie,
@@ -24,6 +26,8 @@ interface FAQItem {
 }
 
 export default function Solution() {
+  const t = useTranslations("Solution");
+
   const [faqs, setFaqs] = useState<FAQItem[]>([
     {
       title: "Data Strategy",
@@ -119,66 +123,60 @@ export default function Solution() {
   return (
     <section>
       <div className="overlay-text-container ">
-        <h1 className="overlay-text">Phyanalytica</h1>
-        <h1 className="overlay-subtext -mt-4">
-          Comprehensive Data Consulting Services
-        </h1>
+        <h1 className="overlay-text">{t("title-main")}</h1>
+        <h1 className="overlay-subtext -mt-4">{t("title-sub")}</h1>
       </div>
 
-      <div className="container mx-auto pt-80" id="sol-whoweare">
-        <ContentImg
-          topText="WHO WE ARE"
-          bottomText="Data Insight Consultation"
-          highlightedWord=""
-          description="Dealing with huge and abundant data makes your team less productive.
-        To get an insight, you need an expert, sit relax and get the reports about your business within days. "
-          buttonText="Contact us"
-          imageUrl="/Home/img-about.jpg"
-          buttonHref="/contact"
-        />
+      <div className="container-main ">
+        <div className="solution-content-img mx-auto" id="sol-whoweare">
+          <ContentImg
+            topText={t("contentImg1.topText")}
+            bottomText={t("contentImg1.bottomText")}
+            highlightedWord=""
+            description={t("contentImg1.description")}
+            buttonText={t("contentImg1.buttonText")}
+            imageUrl="/Home/img-about.jpg"
+            buttonHref="/contact"
+          />
+        </div>
+
+        <div className="sol-offer" id="sol-offer">
+          <ContentTitle
+            topText={t("ContentTitle1.topText")}
+            bottomText={t("ContentTitle1.bottomText")}
+            alignment="center"
+            bottomTextSize="black48"
+          />
+          <p className="text-center justify-center text-2xl mt-8">
+            {t("ContentTitle1.description")}
+          </p>
+        </div>
+
+        <div className="sol-services" id="sol-services">
+          <ContentTitle
+            topText={t("ContentTitle2.topText")}
+            bottomText={t("ContentTitle1.bottomText")}
+            alignment="center"
+            bottomTextSize="black48"
+            highlightedWord="services"
+          />
+          <div className="mt-8">
+            <FAQ faqs={faqs} />
+          </div>
+        </div>
+        <div className="sol-tech pt-20" id="sol-tech">
+          <Tools />
+        </div>
+
+        <div className="absolute left-0 w-full mt-32">
+          <Footer />
+        </div>
       </div>
 
-      <div className="pt-32" id="sol-offer">
-        <ContentTitle
-          topText="WHAT WE OFFER"
-          bottomText="Our Expertise"
-          alignment="center"
-          bottomTextSize="black48"
-          highlightedWord="services"
-        />
-        <p className="text-center justify-center text-2xl mt-8">
-          At Phyanalytica, we offer a range of consulting services for data
-          analysis. We assist businesses throughout the process, from
-          strategizing and auditing to designing architectures and implementing
-          the best technology solutions. Our expertise in data science
-          consulting covers areas such as security, compliance, and machine
-          learning, ensuring robust and effective solutions.
-        </p>
-      </div>
       {/* 
       <div className="banner-container relative mt-32">
         <img src="/Our Offer.png" alt="Banner" className="banner-image" />
       </div> */}
-
-      <div className="pt-32" id="sol-services">
-        <ContentTitle
-          topText="OUR SERVICES"
-          bottomText="Data Consulting Services"
-          alignment="center"
-          bottomTextSize="black48"
-          highlightedWord="services"
-        />
-        <div className="mt-8">
-          <FAQ faqs={faqs} />
-        </div>
-      </div>
-      <div className="pt-20" id="sol-tech">
-        <Tools />
-      </div>
-
-      <div className="absolute left-0 w-full mt-32">
-        <Footer />
-      </div>
     </section>
   );
 }

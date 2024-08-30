@@ -7,9 +7,13 @@ import ProcessAccordion from "@/components/accordion";
 import TimeSeriesArticle from "@/components/Portfolio/TimeSeriesArticle";
 import OcrTools from "@/components/Portfolio/OcrTools";
 import DynamicPricingArticle from "@/components/Portfolio/DynamicPricing";
+import { useTranslations } from "next-intl";
+
 import "@/styles/Portfolio.css";
 
 export default function Portfolio() {
+  const t = useTranslations("Portfolio");
+
   const section1Ref = useRef<HTMLDivElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
   const section3Ref = useRef<HTMLDivElement>(null);

@@ -39,13 +39,53 @@
       "bottomText": "Branchen, in denen wir tätig sind"
     },
     "contentItems": [
-    { "title": "Datenstrategie", "description": "Richtet das Datenmanagement auf die Geschäftsziele aus, um fundierte Entscheidungen zu treffen und strategische Ziele zu erreichen" },
-    { "title": "Datenvisualisierung", "description": "Verwandelt komplexe Daten in visuelle Formate, um Muster und Erkenntnisse leichter verständlich zu machen" },
-    { "title": "Datenmanagement", "description": "Beinhaltet die Organisation, Speicherung und Verwaltung von Daten, um Genauigkeit, Zugänglichkeit und Sicherheit zu gewährleisten" },
-    { "title": "Datenmodellierung und Vorhersage", "description": "Verwendet statistische und maschinelle Lerntechniken, um historische Daten zu analysieren und zukünftige Trends und Ergebnisse vorherzusagen" },
-    { "title": "Datenprüfung", "description": "Systematische Überprüfung und Bewertung der Daten auf Genauigkeit, Konsistenz und Compliance, um Zuverlässigkeit und Integrität sicherzustellen" },
-    { "title": "Datenumwandlung", "description": "Beinhaltet die Umwandlung von Daten aus ihrem ursprünglichen Format in ein strukturiertes Format, das für Analyse und Berichterstattung geeignet ist" },
-    { "title": "Datenengineering und ETL", "description": "Entwurf und Verwaltung von Datenpipelines, um Daten aus Quellen zu extrahieren, sie in ein verwendbares Format zu transformieren und in Speichersysteme zu laden" }
-  ]
+      {
+        "title": "Datenstrategie",
+        "description": "Richtet das Datenmanagement auf die Geschäftsziele aus, um fundierte Entscheidungen zu treffen und strategische Ziele zu erreichen"
+      },
+      {
+        "title": "Datenvisualisierung",
+        "description": "Verwandelt komplexe Daten in visuelle Formate, um Muster und Erkenntnisse leichter verständlich zu machen"
+      },
+      {
+        "title": "Datenmanagement",
+        "description": "Beinhaltet die Organisation, Speicherung und Verwaltung von Daten, um Genauigkeit, Zugänglichkeit und Sicherheit zu gewährleisten"
+      },
+      {
+        "title": "Datenmodellierung und Vorhersage",
+        "description": "Verwendet statistische und maschinelle Lerntechniken, um historische Daten zu analysieren und zukünftige Trends und Ergebnisse vorherzusagen"
+      },
+      {
+        "title": "Datenprüfung",
+        "description": "Systematische Überprüfung und Bewertung der Daten auf Genauigkeit, Konsistenz und Compliance, um Zuverlässigkeit und Integrität sicherzustellen"
+      },
+      {
+        "title": "Datenumwandlung",
+        "description": "Beinhaltet die Umwandlung von Daten aus ihrem ursprünglichen Format in ein strukturiertes Format, das für Analyse und Berichterstattung geeignet ist"
+      },
+      {
+        "title": "Datenengineering und ETL",
+        "description": "Entwurf und Verwaltung von Datenpipelines, um Daten aus Quellen zu extrahieren, sie in ein verwendbares Format zu transformieren und in Speichersysteme zu laden"
+      }
+    ]
+  },
+  "Solution": {
+    "title-main": "Phyanalytica",
+    "title-sub": "Umfassende Datenberatungsdienste",
+    "contentImg1": {
+      "topText": "WER WIR SIND",
+      "bottomText": "Daten-Insight-Beratung",
+      "description": "Der Umgang mit großen und umfangreichen Datenmengen macht Ihr Team weniger produktiv. Um Einblicke zu gewinnen, benötigen Sie einen Experten. Lehnen Sie sich zurück und erhalten Sie innerhalb weniger Tage Berichte über Ihr Unternehmen.",
+      "buttonText": "Kontaktieren Sie uns"
+    },
+    "ContentTitle1": {
+      "topText": "WAS WIR BIETEN",
+      "bottomText": "Unsere Expertise",
+      "description": "Bei Phyanalytica bieten wir eine Reihe von Beratungsdiensten für die Datenanalyse an. Wir unterstützen Unternehmen während des gesamten Prozesses, von der Strategiefindung und Überprüfung bis hin zur Gestaltung von Architekturen und der Implementierung der besten Technologielösungen. Unsere Expertise in der Datenwissenschaftsberatung umfasst Bereiche wie Sicherheit, Compliance und maschinelles Lernen, um robuste und effektive Lösungen zu gewährleisten."
+    },
+    "ContentTitle2": {
+      "topText": "UNSERE DIENSTLEISTUNGEN",
+      "bottomText": "Datenberatungsdienste"
+    }
   }
 }

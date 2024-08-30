@@ -68,4 +68,40 @@
   }
 }
 
+.container-main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  flex-grow: 1;
+}
 
+@media (min-width: 768px) {
+  .container-main {
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-main {
+    max-width: 85%;
+    padding: 3rem 2rem;
+  }
+}
+
+
+.solution-content-img{
+  padding-top: 15rem;
+}
+
+.sol-offer{
+  padding-top: 4rem;
+}
+
+.sol-services{
+  padding-top: 4rem;
+}
+
+.sol-tech{
+  padding-bottom: 4rem;
+}
