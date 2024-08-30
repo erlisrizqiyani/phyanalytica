@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from "react";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -15,6 +15,8 @@ import { Link as NextUILink } from "@nextui-org/link";
 import "@/styles/globals.css";
 import LogoIcon, { SearchIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
+import LanguageSwitcher from "@/components/langswitch"; // Import LanguageSwitcher
+
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,15 +29,15 @@ export const Navbar = () => {
       setScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const handleMenuClick = (index: number, href?: string) => {
     const item = siteConfig.navItems[index];
-    
+
     if (item.subItems) {
       setActiveMenu(activeMenu === index ? null : index);
     } else if (href) {
@@ -90,7 +92,7 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      className={scrolled ? 'navbar-scrolled' : 'navbar-transparent'}
+      className={scrolled ? "navbar-scrolled" : "navbar-transparent"}
       maxWidth="xl"
       position="sticky"
     >
@@ -98,7 +100,9 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-4" href="/">
             <LogoIcon />
-            <p className="font-semibold text-inherit text-[24px]">Phyanalytica</p>
+            <p className="font-semibold text-inherit text-[24px]">
+              Phyanalytica
+            </p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
@@ -122,9 +126,7 @@ export const Navbar = () => {
                 >
                   {item.subItems.map((subItem, subIndex) => (
                     <li key={subIndex} className="p-2 hover:bg-gray-100">
-                      <NextLink href={subItem.href}>
-                        {subItem.label}
-                      </NextLink>
+                      <NextLink href={subItem.href}>{subItem.label}</NextLink>
                     </li>
                   ))}
                 </ul>
@@ -134,12 +136,11 @@ export const Navbar = () => {
         </ul>
       </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        <NavbarItem className="hidden md:flex"></NavbarItem>
+      <NavbarContent className="basis-1/5 sm:basis-full flex items-center justify-between">
+        <NavbarItem>
+          <LanguageSwitcher /> {/* Always visible LanguageSwitcher */}
+        </NavbarItem>
+        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> {/* Search input hidden on small screens */}
       </NavbarContent>
 
       <NavbarMenu>

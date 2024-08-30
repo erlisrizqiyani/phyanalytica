@@ -32,7 +32,7 @@ const ContentImg: React.FC<ContentImgProps> = ({
         { "md:flex-row": !reverse, "md:flex-row-reverse": reverse },
         "items-center",
         "my-2",
-        "gap-10",
+        "gap-10"
       )}
     >
       <div className="w-full md:w-1/2">

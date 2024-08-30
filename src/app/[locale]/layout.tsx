@@ -4,14 +4,14 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/navbar";
 import { Providers } from "../providers";
-import localFont from 'next/font/local';
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import localFont from "next/font/local";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const myFont = localFont({
-  src: './fonts/Poppins-Light.ttf',
-  display: 'swap',
-})
+  src: "./fonts/Poppins-Light.ttf",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -25,39 +25,30 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-  ],
+  themeColor: [{ media: "(prefers-color-scheme: light)", color: "white" }],
 };
 
 export default async function RootLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
   const messages = await getMessages();
   return (
-    <html suppressHydrationWarning lang="en" className={myFont.className}>
+    <html suppressHydrationWarning lang={locale} className={myFont.className}>
       <head />
-      <body
-        className={clsx(
-          "min-h-screen bg-background antialiased",
-        )}
-      >
+      <body className={clsx("min-h-screen bg-background antialiased")}>
         <NextIntlClientProvider messages={messages}>
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div className="">
-            <Navbar />
-            <main className="w-full">
-              {children}
-            </main>
-            <footer className="w-full flex items-center justify-center py-3">
-            </footer>
-          </div></Providers>
+          <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+            <div className="">
+              <Navbar />
+              <main className="w-full">{children}</main>
+              <footer className="w-full flex items-center justify-center py-3"></footer>
+            </div>
+          </Providers>
         </NextIntlClientProvider>
-        
       </body>
     </html>
   );

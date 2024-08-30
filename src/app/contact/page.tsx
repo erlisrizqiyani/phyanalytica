@@ -16,7 +16,7 @@ export default function ContactUs() {
       method: "POST",
       body: formData,
       headers: {
-        "Accept": "application/json",
+        Accept: "application/json",
       },
     });
 
@@ -31,7 +31,9 @@ export default function ContactUs() {
     <section>
       <div className="overlay-text-container">
         <h1 className="overlay-text">Get In Touch</h1>
-        <h2 className="overlay-subtext -mt-4">Comprehensive Data Consulting Services</h2>
+        <h2 className="overlay-subtext -mt-4">
+          Comprehensive Data Consulting Services
+        </h2>
       </div>
       <div className="contact-container sm:mx-8 lg:mx-auto mt-60">
         <div className="company-details">
@@ -42,11 +44,15 @@ export default function ContactUs() {
           </p>
           <p>
             <FaEnvelope className="icon ml" /> Email us at{" "}
-            <a href="mailto:partner@phyanalytic.com" className="ml-2">partner@phyanalytic.com</a>
+            <a href="mailto:partner@phyanalytic.com" className="ml-2">
+              partner@phyanalytic.com
+            </a>
           </p>
           <p>
             <FaPhone className="icon" /> Call us at{" "}
-            <a href="tel:+6285156162840" className="ml-2">+49 157-3155-4563</a>
+            <a href="tel:+6285156162840" className="ml-2">
+              +49 157-3155-4563
+            </a>
           </p>
 
           <div className="company-addresses">

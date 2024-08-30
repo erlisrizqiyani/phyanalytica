@@ -1,37 +1,30 @@
-.client-logos-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.scrolling-wrapper {
+/* ClientLogos.css */
+.scroll-container {
   display: flex;
-  white-space: nowrap; /* Ensures items stay in a single row */
-  animation: scroll 30s linear infinite;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
 }
 
-.logo {
-  flex: 0 0 auto;
-  margin-right: 30px; /* 50px gap between logos */
+.scroll-container img {
+  width: 100px;
+  height: 60px;
+  margin-right: 16px;
 }
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Sembunyikan scrollbar untuk tampilan yang bersih */
+}
+
+.scroll-container {
+  animation: scroll 10s linear infinite;
+}
+
 @keyframes scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%); /* Geser setengah dari lebar total elemen */
+  to {
+    transform: translateX(-100%);
   }
-}
-
-.logo {
-  display: inline-block;
-  width: 150px; /* Set the width of the logo */
-  height: 50px; /* Set the height of the logo */
-  margin-right: 10px; /* Optional: add some space between logos */
-}
-
-.logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Keeps the aspect ratio while fitting within the dimensions */
 }

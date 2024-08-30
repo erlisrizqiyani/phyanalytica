@@ -1,6 +1,52 @@
 {
-    "HomePage": {
-      "title": "Unlock Your Business",
-      "about": "Go to the about page"
-    }
+  "HomePage": {
+    "title-main": "Unlock Your Business",
+    "title-sub": "Potential with Data Expertise",
+    "title-description": "Unleash the power of data with Phyanalytica, your trusted data consulting partner",
+    "contentimg1": {
+      "topText": "WHO WE ARE",
+      "bottomText": "Get to know us",
+      "highlightedWord": "",
+      "description": "Phyanalytica specialize in providing comprehensive consulting services for data analysis, guiding businesses through every stage of the process. From initial strategy and auditing to designing robust data architectures and implementing cutting-edge technology solutions, our goal is to empower organizations with data-driven insights. Our expertise extends across various facets of data science, including security, compliance, and machine learning, ensuring that our clients receive secure, compliant, and highly effective solutions tailored to their needs.",
+      "buttonText": "Read more",
+      "imageUrl": "/Home/img-about.jpg"
+    },
+    "contentgrid": {
+      "topText": "WHAT WE DO",
+      "bottomText": "Perfect Solution to your business growth",
+      "highlightedWord": "growth"
+    },
+    "ContentCard1":{
+      "topText": "DID YOU KNOW" ,
+      "bottomText": "Monetize Your Data with AI-Powered Insights",
+      "description":"Artificial Intelligence (AI) revolutionizes data monetization by turning raw information into actionable insights. Through enhanced customer insights, predictive analytics, and operational efficiency, businesses can deliver personalized experiences, optimize processes, and discover new revenue streams.",
+      "highlightedWord": "AI-Powered"
+      
+    },
+    "ContentCard2":{
+      "topText": "DID YOU KNOW" ,
+      "bottomText": "The Importance of Data Privacy and Security",
+      "description": "By leveraging the advanced technologies of Google Cloud and Amazon Web Services (AWS), we ensure that your data remains secure and protected. We comply with data privacy standards such as GDPR and CCPA, implement high-level encryption for data-at-rest and data-in-transit, and conduct regular security audits.",
+      "highlightedWord": "Importance"
+    },
+    "ContentCard3":{
+      "topText": "DID YOU KNOW" ,
+      "bottomText": "The Importance of Digitization and Data Management",
+      "description": "Digitization converts physical records into digital formats, making them more accessible and efficient. Effective data management ensures this information is accurate, secure, and easily available, driving better decision-making and operational efficiency. Adopting these practices enhances competitiveness and supports strategic growth.",
+      "highlightedWord": "Importance"
+    },
+    "ContentTitle1":{
+      "topText": "OUR SPECIALIZATION",
+      "bottomText" :"Industries we work in"
+    },
+    "contentItems": [
+      { "title": "Data Strategy", "description": "Aligns data management with business goals to drive informed decision-making and achieve strategic objectives" },
+      { "title": "Data Visualization", "description": "Transforms complex data into visual formats, making patterns and insights easier to understand and interpret" },
+      { "title": "Data Management", "description": "Involves organizing, storing, and maintaining data to ensure its accuracy, accessibility, and security" },
+      { "title": "Data Modelling And Prediction", "description": "Use statistical and machine learning techniques to analyze historical data and forecast future trends and outcomes" },
+      { "title": "Data Audit", "description": "Systematically reviews and evaluates data accuracy, consistency, and compliance to ensure reliability and integrity" },
+      { "title": "Data Transformation", "description": "Involves converting data from its original format into a structured format suitable for analysis and reporting" },
+      { "title": "Data Engineering And ETL", "description": "Designing and managing data pipelines to extract data from sources, transform it into a usable format, and load it into storage systems for analysis" }
+    ]
   }
+}

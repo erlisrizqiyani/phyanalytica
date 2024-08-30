@@ -44,10 +44,12 @@ export default function Portfolio() {
     <section>
       <div className="overlay-text-container">
         <h1 className="overlay-text">Portfolio</h1>
-        <h2 className="overlay-subtext -mt-4">Comprehensive Data Consulting Services</h2>
+        <h2 className="overlay-subtext -mt-4">
+          Comprehensive Data Consulting Services
+        </h2>
       </div>
 
-      <div className="container mx-auto mt-60" >
+      <div className="container mx-auto mt-60">
         <div className=" grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <Card
             imageSrc="/Portfolio/Portfolio_Time.jpg"
@@ -74,20 +76,18 @@ export default function Portfolio() {
             onClick={() => scrollToSection(section3Ref)}
           />
         </div>
-
-        
       </div>
       <div ref={section1Ref} className="pt-24" id="port-time">
-          <div className="mb-2">
+        <div className="mb-2">
           <ContentTitle
             topText="Portfolio"
             bottomText="Time Series Analysis"
             alignment="center"
             bottomTextSize="semiBold40"
           />
-          </div>
-           
-          {/*
+        </div>
+
+        {/*
           <div className="mt-6">
             <ProcessAccordion
               items={accordionItems1}
@@ -98,12 +98,12 @@ export default function Portfolio() {
               textPosition="left"
             />
           </div> */}
-          <div>
-            <TimeSeriesArticle/>
-          </div>
+        <div>
+          <TimeSeriesArticle />
         </div>
+      </div>
 
-        <div ref={section2Ref} className="pt-4" id="port-ocr">
+      <div ref={section2Ref} className="pt-4" id="port-ocr">
         <div className="mb-2">
           <ContentTitle
             topText="Portfolio"
@@ -111,18 +111,18 @@ export default function Portfolio() {
             alignment="center"
             bottomTextSize="semiBold40"
           />
-          </div>
-          {/* <ProcessAccordion
+        </div>
+        {/* <ProcessAccordion
             items={accordionItems2}
             position="right"
             title="OCR Tools"
             description="Learn about our OCR tool's features and benefits for automating invoice processing."
             textPosition="right"
           /> */}
-          <OcrTools/>
-        </div>
+        <OcrTools />
+      </div>
 
-        <div ref={section3Ref} className="pt-4" id="port-pricing">
+      <div ref={section3Ref} className="pt-4" id="port-pricing">
         <div className="mb-2">
           <ContentTitle
             topText="Portfolio"
@@ -130,18 +130,18 @@ export default function Portfolio() {
             alignment="center"
             bottomTextSize="semiBold40"
           />
-          </div>
-          {/* <ProcessAccordion
+        </div>
+        {/* <ProcessAccordion
             items={accordionItems3}
             position="left"
             title="Dynamic Pricing"
             description="Discover our dynamic pricing strategies and case studies across various sectors."
             textPosition="left"
           /> */}
-        </div>
-        <div>
-          <DynamicPricingArticle/>
-        </div>
+      </div>
+      <div>
+        <DynamicPricingArticle />
+      </div>
 
       <div className="absolute left-0 w-full mt-8">
         <Footer />

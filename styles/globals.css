@@ -58,7 +58,6 @@ html{
     color: #fff; /* text-white */
     font-weight: bold; /* font-bold */
     font-size: 2.25rem; /* text-4xl */
-    
     line-height: normal;
   }
   
@@ -67,6 +66,7 @@ html{
       font-size: 3.75rem; /* md:text-6xl */
     }
   }
+
   
   .home-title-2 {
     color: #fff; /* text-white-500 */
@@ -153,15 +153,26 @@ html{
 
 /* Container Styles */
 .container-main {
-  margin-left: 8rem;
-  margin-right: 8rem;
-  max-width: 7xl;
-  padding-top: 4rem; /* Equivalent to pt-16 */
-  padding-left: 1.5rem; /* Equivalent to px-6 */
-  padding-right: 1.5rem; /* Equivalent to px-6 */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  padding: 2rem 1rem;
   flex-grow: 1;
 }
 
+@media (min-width: 768px) {
+  .container-main {
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-main {
+    max-width: 85%;
+    padding: 3rem 2rem;
+  }
+}
 .container-about {
   display: flex;
   margin-left: auto;
@@ -174,7 +185,6 @@ html{
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem; /* Equivalent to p-4 */
   margin-top: 5rem; /* Equivalent to mt-20 */
   justify-content: center;
 }
@@ -183,7 +193,6 @@ html{
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem; /* Equivalent to p-4 */
   margin-top: 5rem; /* Equivalent to mt-20 */
   justify-content: center;
 }
@@ -191,7 +200,6 @@ html{
 .container-industries {
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem 1.5rem; /* Equivalent to px-4 py-4 */
   margin-top: 8rem; /* Equivalent to mt-32 */
 }
 
@@ -218,8 +226,14 @@ html{
   }
 }
 
+.border-industries{
+  border-color: rgb(127, 106, 147);
+  margin-top: 1rem;
+  
+}
 
 .grid-industries {
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr); /* Single column by default */
   gap: 1rem; /* Equivalent to gap-4 */
@@ -232,3 +246,50 @@ html{
     grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens and up */
   }
 }
+.client-logo {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 2rem; /* Gunakan unit yang sesuai */
+  overflow: hidden;
+}
+
+/* ClientLogos.css */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.scroll-container img {
+  width: 100px;
+  height: 60px;
+  margin-right: 16px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Sembunyikan scrollbar untuk tampilan yang bersih */
+}
+
+.scroll-container {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+.footer{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 10rem;
+}
+

@@ -34,7 +34,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
           src={imageSrc}
           alt={bottomText}
         />
-        <div className="h-60 px-6 py-4 bg-gray-200 rounded-[10px] mt-4">
+        <div className="lg:h-60 md:h-90 sm:h-100 px-6 py-4 bg-gray-200 rounded-[10px] mt-4">
           <p className="text-gray-700 text-base">{description}</p>
         </div>
       </div>

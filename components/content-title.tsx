@@ -27,7 +27,7 @@ const ContentTitle: React.FC<ContentTitleProps> = ({
 }) => {
   // Split bottomText by the highlightedWord
   const parts = highlightedWord
-    ? bottomText.split(new RegExp(`(${highlightedWord})`, 'gi'))
+    ? bottomText.split(new RegExp(`(${highlightedWord})`, "gi"))
     : [bottomText];
 
   return (

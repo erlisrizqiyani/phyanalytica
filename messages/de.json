@@ -1,6 +1,51 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
-    }
+  "HomePage": {
+    "title-main": "Entfesseln Sie Ihr Geschäft",
+    "title-sub": "Potenzial mit Datenkompetenz",
+    "title-description": "Entfesseln Sie die Kraft der Daten mit Phyanalytica, Ihrem vertrauenswürdigen Datenberatungspartner",
+    "contentimg1": {
+      "topText": "WER WIR SIND",
+      "bottomText": "Lernen Sie uns kennen",
+      "highlightedWord": "",
+      "description": "Phyanalytica ist auf die Bereitstellung umfassender Beratungsdienste für die Datenanalyse spezialisiert und führt Unternehmen durch jeden Schritt des Prozesses. Von der anfänglichen Strategie und Prüfung bis hin zur Gestaltung robuster Datenarchitekturen und der Implementierung modernster Technologielösungen ist es unser Ziel, Organisationen mit datengesteuerten Einblicken zu stärken. Unser Fachwissen erstreckt sich über verschiedene Bereiche der Datenwissenschaft, einschließlich Sicherheit, Compliance und maschinellem Lernen, um sicherzustellen, dass unsere Kunden sichere, konforme und hochwirksame Lösungen erhalten, die auf ihre Bedürfnisse zugeschnitten sind.",
+      "buttonText": "Mehr lesen",
+      "imageUrl": "/Home/img-about.jpg"
+    },
+    "contentgrid": {
+      "topText": "WAS WIR TUN",
+      "bottomText": "Perfekte Lösung für Ihr Unternehmenswachstum",
+      "highlightedWord": "Wachstum"
+    },
+    "ContentCard1": {
+      "topText": "WUSSTEN SIE SCHON",
+      "bottomText": "Monetarisieren Sie Ihre Daten mit KI-gestützten Erkenntnissen",
+      "description": "Künstliche Intelligenz verwandelt rohe Daten in wertvolle Erkenntnisse, ermöglicht personalisierte Erlebnisse und optimiert Geschäftsprozesse. Entdecken Sie neue Einnahmequellen, steigern Sie Ihre Effizienz und verbessern Sie Ihre Wettbewerbsfähigkeit mit fortschrittlicher KI-Technologie.",
+      "highlightedWord": "KI-gestützten"
+    },
+    "ContentCard2": {
+      "topText": "WUSSTEN SIE SCHON",
+      "bottomText": "Die Bedeutung von Datenschutz und Sicherheit",
+      "description": "Mit fortschrittlicher Technologie von Google Cloud und AWS schützen wir Ihre Daten und erfüllen wichtige Datenschutzvorschriften wie GDPR und CCPA. Ihre Daten sind sicher, und regelmäßige Sicherheitsüberprüfungen gewährleisten kontinuierlichen Schutz vor Bedrohungen.",
+      "highlightedWord": "Bedeutung"
+    },
+    "ContentCard3": {
+      "topText": "WUSSTEN SIE SCHON",
+      "bottomText": "Die Bedeutung von Digitalisierung und Datenmanagement",
+      "description": "Digitalisierung wandelt physische Daten in digitale Formate um, die leichter zugänglich und effizienter sind. Gutes Datenmanagement sorgt für Genauigkeit, Sicherheit und einfache Verfügbarkeit, unterstützt bessere Entscheidungen und fördert das Wachstum Ihres Unternehmens.",
+      "highlightedWord": "Bedeutung"
+    },
+    "ContentTitle1": {
+      "topText": "UNSERE SPEZIALISIERUNG",
+      "bottomText": "Branchen, in denen wir tätig sind"
+    },
+    "contentItems": [
+    { "title": "Datenstrategie", "description": "Richtet das Datenmanagement auf die Geschäftsziele aus, um fundierte Entscheidungen zu treffen und strategische Ziele zu erreichen" },
+    { "title": "Datenvisualisierung", "description": "Verwandelt komplexe Daten in visuelle Formate, um Muster und Erkenntnisse leichter verständlich zu machen" },
+    { "title": "Datenmanagement", "description": "Beinhaltet die Organisation, Speicherung und Verwaltung von Daten, um Genauigkeit, Zugänglichkeit und Sicherheit zu gewährleisten" },
+    { "title": "Datenmodellierung und Vorhersage", "description": "Verwendet statistische und maschinelle Lerntechniken, um historische Daten zu analysieren und zukünftige Trends und Ergebnisse vorherzusagen" },
+    { "title": "Datenprüfung", "description": "Systematische Überprüfung und Bewertung der Daten auf Genauigkeit, Konsistenz und Compliance, um Zuverlässigkeit und Integrität sicherzustellen" },
+    { "title": "Datenumwandlung", "description": "Beinhaltet die Umwandlung von Daten aus ihrem ursprünglichen Format in ein strukturiertes Format, das für Analyse und Berichterstattung geeignet ist" },
+    { "title": "Datenengineering und ETL", "description": "Entwurf und Verwaltung von Datenpipelines, um Daten aus Quellen zu extrahieren, sie in ein verwendbares Format zu transformieren und in Speichersysteme zu laden" }
+  ]
   }
+}
