@@ -1,0 +1,12 @@
+/* Default to showing full names */
+.locale-switcher option::before {
+    content: attr(data-full);
+  }
+  
+  /* On smaller screens, show short codes */
+  @media (max-width: 640px) {
+    .locale-switcher option::before {
+      content: attr(value);
+    }
+  }
+  

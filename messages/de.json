@@ -87,5 +87,234 @@
       "topText": "UNSERE DIENSTLEISTUNGEN",
       "bottomText": "Datenberatungsdienste"
     }
-  }
+  },
+
+  "Portfolio": {
+    "title-main": "Phyanalytica",
+    "title-sub": "Umfassende Datenberatungsdienste",
+    "card1": {
+      "title": "Zeitreihenanalyse",
+      "description": "In unserer Datenberatungsfirma sind wir auf fortgeschrittene Zeitreihenanalysen spezialisiert, um die Nachfrage in verschiedenen Branchen vorherzusagen. Mit unserer umfangreichen Erfahrung und Expertise haben wir erfolgreich Nachfrageprognosen für Hotels unter Verwendung fortschrittlicher Algorithmen wie Facebooks Prophet und Long Short-Term Memory (LSTM)-Netzwerken durchgeführt."
+    },
+    "card2": {
+      "title": "OCR-Tools",
+      "description": "Eines unserer wichtigsten Projekte ist die Entwicklung eines OCR-Tools, das speziell für die Verarbeitung von Rechnungen entwickelt wurde. Diese Software automatisiert die Extraktion von Daten aus gescannten Rechnungen und wandelt sie in Textdateien um, die als Eingaben für ERP-Systeme von Kunden verwendet werden können."
+    },
+    "card3": {
+      "title": "Dynamische Preisgestaltung",
+      "description": "Die dynamische Preisgestaltung ist eine leistungsstarke Strategie, die es Unternehmen ermöglicht, Preise in Echtzeit basierend auf Marktnachfrage, Wettbewerb und anderen externen Faktoren anzupassen. Bei Phyanalytica bieten wir umfassende Beratungsdienste zur dynamischen Preisgestaltung an, um Ihrem Unternehmen zu helfen, das Umsatzpotenzial zu maximieren und gleichzeitig die Kundenzufriedenheit zu gewährleisten."
+    }
+  },
+
+  "DynamicPricing-Component": {
+    "dynamic-pricing-title": "Umsatzpotenzial freisetzen mit dynamischer Preisgestaltung",
+    "dynamic-pricing-description": "In einem zunehmend wettbewerbsintensiven Markt müssen Unternehmen jede mögliche Chance nutzen, um ihren Umsatz zu optimieren. Die dynamische Preisgestaltung ist eine leistungsstarke Strategie, die es Unternehmen ermöglicht, Preise in Echtzeit basierend auf Marktnachfrage, Wettbewerb und anderen externen Faktoren anzupassen. Bei Phyanalytica bieten wir umfassende Beratungsdienste zur dynamischen Preisgestaltung an, um Ihrem Unternehmen zu helfen, das Umsatzpotenzial zu maximieren und gleichzeitig die Kundenzufriedenheit zu gewährleisten.",
+    "dynamic-pricing-image-alt": "Beratung zur dynamischen Preisgestaltung",
+    "what-is-dynamic-pricing": "Was ist dynamische Preisgestaltung?",
+    "market-demand-title": "Marktnachfrage",
+    "market-demand-description": "Preise steigen bei hoher Nachfrage und sinken bei niedriger Nachfrage, um Verkäufe und Lagerbestände auszugleichen.",
+    "competitor-pricing-title": "Wettbewerberpreise",
+    "competitor-pricing-description": "Anpassung der Preise als Reaktion auf Preisänderungen von Wettbewerbern, um wettbewerbsfähig zu bleiben.",
+    "customer-behavior-title": "Kundenverhalten",
+    "customer-behavior-description": "Anpassung der Preise basierend auf den Kaufmustern und Vorlieben der Kunden.",
+    "external-factors-title": "Externe Faktoren",
+    "external-factors-description": "Berücksichtigung externer Ereignisse wie Feiertage, Wetterbedingungen oder wirtschaftliche Veränderungen, die das Kaufverhalten beeinflussen.",
+    "benefits-of-dynamic-pricing": "Vorteile der dynamischen Preisgestaltung",
+    "maximized-revenue-title": "Maximierter Umsatz",
+    "maximized-revenue-description": "Durch die Erfassung höherer Preise während der Spitzenzeiten kann Ihr Unternehmen den Gesamterlös steigern.",
+    "improved-inventory-management-title": "Verbessertes Bestandsmanagement",
+    "improved-inventory-management-description": "Die dynamische Preisgestaltung hilft, optimale Lagerbestände aufrechtzuerhalten, indem Preise zur effizienten Steuerung von Angebot und Nachfrage angepasst werden.",
+    "enhanced-competitiveness-title": "Erhöhte Wettbewerbsfähigkeit",
+    "enhanced-competitiveness-description": "Durch die Reaktion auf Marktveränderungen bleibt Ihr Unternehmen in einem schwankenden Markt wettbewerbsfähig.",
+    "customer-segmentation-title": "Kundensegmentierung",
+    "customer-segmentation-description": "Verständnis und gezielte Ansprache verschiedener Kundensegmente mit maßgeschneiderten Preisstrategien zur Verbesserung der Konversionsraten.",
+    "how-phyanalytica-can-help": "Wie Phyanalytica helfen kann",
+    "phyanalytica-help-description": "Bei Phyanalytica bieten wir Fachberatung zur Implementierung und Optimierung dynamischer Preisstrategien, die auf die spezifischen Bedürfnisse Ihres Unternehmens zugeschnitten sind. Unser Ansatz umfasst:",
+    "data-analysis-title": "Datenanalyse",
+    "data-analysis-description": "Wir analysieren historische Verkaufsdaten, Markttrends und das Kundenverhalten, um Preisoptionen zu identifizieren.",
+    "price-optimization-models-title": "Preismodell-Optimierung",
+    "price-optimization-models-description": "Nutzung fortschrittlicher maschineller Lernalgorithmen zur Entwicklung von Modellen, die die optimalen Preispunkte für verschiedene Szenarien vorhersagen.",
+    "real-time-monitoring-title": "Echtzeitüberwachung und Anpassung",
+    "real-time-monitoring-description": "Implementierung von Systemen zur kontinuierlichen Überwachung der Marktbedingungen und zur Anpassung der Preise in Echtzeit.",
+    "performance-evaluation-title": "Leistungsbewertung",
+    "performance-evaluation-description": "Regelmäßige Bewertung der Auswirkungen dynamischer Preisstrategien auf den Umsatz und notwendige Anpassungen zur Verbesserung der Ergebnisse.",
+    "example-case-studies": "Beispiel-Fallstudien",
+    "retail-industry-title": "Einzelhandel",
+    "retail-industry-description": "Ein führender Onlinehändler erzielte eine Umsatzsteigerung von 15 % und verbesserte die Kundenzufriedenheit durch unsere dynamische Preisstrategie.",
+    "travel-hospitality-title": "Reisen und Gastgewerbe",
+    "travel-hospitality-description": "Eine Hotelkette verzeichnete eine Umsatzsteigerung von 20 % pro verfügbarem Zimmer (RevPAR), indem die Zimmerpreise durch unsere Beratung zur dynamischen Preisgestaltung optimiert wurden.",
+    "ecommerce-title": "E-Commerce",
+    "ecommerce-description": "Eine E-Commerce-Plattform verzeichnete eine Steigerung der Konversionsraten um 25 % und einen Anstieg des durchschnittlichen Bestellwerts durch unsere dynamischen Preisgestaltungslösungen.",
+    "conclusion-title": "Fazit",
+    "conclusion-description": "Die dynamische Preis"
+  },
+
+  "Ocrtools-Component": {
+    "title": "Automatisierte Datenextraktion mit OCR-Tools",
+    "description": "Unsere fortschrittlichen OCR-Tools revolutionieren die Art und Weise, wie Unternehmen Daten verarbeiten, indem sie den Extraktionsprozess aus verschiedenen Dokumenten automatisieren. Von Rechnungen bis zu medizinischen Aufzeichnungen sind unsere OCR-Lösungen darauf ausgelegt, Genauigkeit, Effizienz zu verbessern und manuellen Aufwand zu reduzieren.",
+    "keyFeatures": "Hauptmerkmale:",
+    "features": {
+      "scanning": {
+        "strong": "Scannen und Digitalisierung:",
+        "rest": " Konvertiert Papierdokumente schnell und genau in digitale Formate."
+      },
+      "recognition": {
+        "strong": "Texterkennung:",
+        "rest": " Extrahiert wichtige Informationen wie Rechnungsnummern, Daten und Beträge mit Hilfe ausgeklügelter OCR-Algorithmen."
+      },
+      "integration": {
+        "strong": "Nahtlose Integration:",
+        "rest": " Integriert sich direkt in ERP-Systeme für automatisierte Dateneingabe und -formatierung."
+      }
+    },
+    "applicationsTitle": "Breitere Anwendungen der OCR-Technologie",
+    "applicationsDescription": "Während unser OCR-Tool bei der Rechnungsbearbeitung hervorragende Leistungen erbringt, ist die Technologie vielseitig und auf eine Vielzahl von Geschäftsprozessen anwendbar:",
+    "documentManagement": {
+      "title": "Dokumentenmanagement:",
+      "contracts": {
+        "strong": "Verträge und Vereinbarungen:",
+        "rest": " Digitalisieren Sie Verträge, um sie bearbeitbar und durchsuchbar zu machen."
+      },
+      "reports": {
+        "strong": "Berichte und Formulare:",
+        "rest": " Daten extrahieren für schnellen Zugriff und Analyse."
+      }
+    },
+    "healthcare": {
+      "title": "Gesundheitswesen:",
+      "medicalRecords": {
+        "strong": "Medizinische Aufzeichnungen:",
+        "rest": " Digitalisieren Sie Patientenakten und Rezepte für besseren Zugang."
+      },
+      "insuranceClaims": {
+        "strong": "Versicherungsansprüche:",
+        "rest": " Automatisieren Sie die Datenextraktion aus gescannten Formularen."
+      }
+    },
+    "retail": {
+      "title": "Einzelhandel und Bestandsmanagement:",
+      "receipts": {
+        "strong": "Quittungen und Bestellungen:",
+        "rest": " Optimieren Sie das Bestandsmanagement durch automatisierte Datenextraktion."
+      },
+      "labels": {
+        "strong": "Produktetiketten:",
+        "rest": " Etiketten digitalisieren für einfachere Nachverfolgung und Verwaltung."
+      }
+    },
+    "finance": {
+      "title": "Finanzen und Banking:",
+      "checkProcessing": {
+        "strong": "Scheckbearbeitung:",
+        "rest": " Beschleunigen Sie den Prozess durch Scannen und Digitalisierung von Schecks."
+      },
+      "statements": {
+        "strong": "Finanzberichte:",
+        "rest": " Extrahieren Sie wichtige Daten für Analyse und Buchhaltung."
+      }
+    },
+    "government": {
+      "title": "Regierung und öffentliche Dienste:",
+      "identityDocuments": {
+        "strong": "Identitätsdokumente:",
+        "rest": " Pässe und Führerscheine digitalisieren für sichere Aufbewahrung."
+      },
+      "publicRecords": {
+        "strong": "Öffentliche Aufzeichnungen:",
+        "rest": " Öffentliche Aufzeichnungen in durchsuchbare digitale Formate umwandeln."
+      }
+    },
+    "developmentProcess": "Unser Entwicklungsprozess",
+    "steps": {
+      "requirementAnalysis": {
+        "strong": "Anforderungsanalyse:",
+        "rest": " Wir analysieren die Bedürfnisse der Kunden, um die OCR-Lösung auf spezifische Dokumenttypen und Geschäftsprozesse abzustimmen."
+      },
+      "algorithmSelection": {
+        "strong": "Algorithmusauswahl:",
+        "rest": " Wir wählen erstklassige OCR-Algorithmen wie Tesseract OCR und Google Vision API für optimale Texterkennung aus."
+      },
+      "dataPreprocessing": {
+        "strong": "Datenvorverarbeitung:",
+        "rest": " Gescannte Dokumente werden vorverarbeitet, um die Textklarheit und Genauigkeit bei der Extraktion zu verbessern."
+      },
+      "customTemplates": {
+        "strong": "Erstellung benutzerdefinierter Vorlagen:",
+        "rest": " Für Dokumente mit konsistenten Formaten erstellen wir benutzerdefinierte Vorlagen zur Verbesserung der Genauigkeit."
+      },
+      "testing": {
+        "strong": "Testen und Validieren:",
+        "rest": " Unsere Tools durchlaufen strenge Tests mit realen Dokumenten, um zuverlässige Leistung sicherzustellen."
+      },
+      "integration": {
+        "strong": "Integration und Bereitstellung:",
+        "rest": " Wir gewährleisten eine nahtlose Integration des OCR-Tools in bestehende Softwaresysteme für einen reibungslosen Betrieb."
+      },
+      "improvement": {
+        "strong": "Kontinuierliche Verbesserung:",
+        "rest": " Wir überwachen und aktualisieren kontinuierlich die OCR-Tools, um uns an neue Dokumentenformate anzupassen und die Genauigkeit im Laufe der Zeit zu verbessern."
+      }
+    },
+    "conclusionTitle": "Fazit",
+    "conclusion": "Unsere fortschrittlichen OCR-Lösungen sind darauf ausgelegt, Geschäftsprozesse durch erhebliche Steigerung der Effizienz und Genauigkeit zu transformieren. Von der Automatisierung der Rechnungsbearbeitung bis hin zur Verwaltung medizinischer Aufzeichnungen bieten unsere OCR-Tools erhebliche Vorteile in verschiedenen Branchen. Durch die Nutzung unserer Expertise in der OCR-Technologie können Sie Abläufe optimieren, Kosten senken und sich auf die Förderung des Geschäftswachstums konzentrieren.",
+    "contact": "Für weitere Informationen zu unseren OCR-Lösungen und wie sie Ihrem Unternehmen zugutekommen können, kontaktieren Sie uns bitte."
+  },
+
+  "TimeSeries-Component": {
+    "title": "Zeitreihenanalyse für die Nachfrage im Hotelwesen",
+    "description": "Die genaue Vorhersage der Hotelnachfrage ist entscheidend für die Optimierung der Betriebsabläufe, Maximierung des Umsatzes und Verbesserung der Kundenzufriedenheit. Durch unsere fortschrittlichen Zeitreihenanalysetechniken helfen wir Hotels, Nachfrageschwankungen vorherzusehen, sodass sie informierte Entscheidungen über Personalplanung, Preisgestaltung und Bestandsmanagement treffen können.",
+    "prophetTitle": "Facebook Prophet Algorithmus:",
+    "prophetRobust": "Robust gegenüber fehlenden Daten:",
+    "prophetRobustDesc": " Prophet ist darauf ausgelegt, fehlende Daten und Ausreißer effektiv zu verarbeiten, was ihn für reale Hoteldaten geeignet macht.",
+    "prophetSeasonality": "Saisonale Handhabung:",
+    "prophetSeasonalityDesc": " Prophet ist hervorragend darin, tägliche, wöchentliche und jährliche Saisonmuster zu erfassen, die für die Nachfragevorhersage im Hotelwesen entscheidend sind.",
+    "prophetTrend": "Trend-Analyse:",
+    "prophetTrendDesc": " Es bietet flexible Trendkomponenten, die sich an verschiedene Änderungen der Nachfrage im Hotelwesen anpassen können.",
+    "lstmTitle": "Long Short-Term Memory (LSTM) Netzwerke:",
+    "lstmSequential": "Sequentielle Daten:",
+    "lstmSequentialDesc": " LSTM-Netzwerke sind eine Art von Recurrent Neural Network (RNN), die sich darauf spezialisieren, Zeitreihendaten durch Beibehaltung langfristiger Abhängigkeiten zu lernen und vorherzusagen.",
+    "lstmComplex": "Komplexe Muster:",
+    "lstmComplexDesc": " LSTM kann komplexe zeitliche Muster und Wechselwirkungen innerhalb der Daten erfassen, was eine hohe Genauigkeit bei der Nachfragevorhersage bietet.",
+    "lstmAdaptive": "Adaptive Lernfähigkeit:",
+    "lstmAdaptiveDesc": " Es passt sich an Änderungen der Daten im Laufe der Zeit an und bietet robuste Vorhersagen, selbst wenn sich die Nachfrage Muster entwickeln.",
+    "versatileTitle": "Jenseits der Hotelnachfrage: Vielseitige Prognoselösungen",
+    "versatileDesc": "Während wir umfangreiche Erfahrung in der Hotelnachfragevorhersage haben, erstreckt sich unsere Expertise in der Zeitreihenanalyse auf verschiedene andere Branchen. Unsere Methoden sind anpassungsfähig und können auf jede Nachfrageszenario angewendet werden, einschließlich:",
+    "retailTitle": "Einzelhandel:",
+    "retailInventory": "Bestandsmanagement:",
+    "retailInventoryDesc": " Vorhersage der Produktnachfrage zur Optimierung der Bestandsniveaus, Reduzierung von Fehlbeständen und Minimierung von Lagerhaltungskosten.",
+    "retailSales": "Verkaufsprognosen:",
+    "retailSalesDesc": " Antizipieren von Verkaufstrends zur Information von Marketingstrategien, Werbeaktionen und Personalbedarf.",
+    "manufacturingTitle": "Fertigung:",
+    "manufacturingProduction": "Produktionsplanung:",
+    "manufacturingProductionDesc": " Vorhersage der Nachfrage nach gefertigten Gütern zur Optimierung von Produktionsplänen, Reduzierung der Vorlaufzeiten und effizienten Ressourcennutzung.",
+    "manufacturingSupplyChain": "Lieferkettenoptimierung:",
+    "manufacturingSupplyChainDesc": " Verbesserung des Lieferkettenmanagements durch Prognose der Nachfrage nach Rohstoffen und Fertigprodukten.",
+    "energyTitle": "Energie:",
+    "energyLoad": "Lastprognose:",
+    "energyLoadDesc": " Vorhersage der Energieverbrauchsmuster zur Sicherstellung einer effizienten Energieverteilung und Verwaltung der Netzstabilität.",
+    "energyRenewable": "Erneuerbare Energie:",
+    "energyRenewableDesc": " Prognose der Verfügbarkeit von erneuerbaren Energiequellen wie Solar- und Windenergie zur Optimierung des Energiemixes und der Speichermöglichkeiten.",
+    "healthcareTitle": "Gesundheitswesen:",
+    "healthcarePatient": "Patientennachfrage:",
+    "healthcarePatientDesc": " Antizipation des Patientenstroms zur Verwaltung des Krankenhauspersonals, der Ressourcenzuteilung und des Bestands an medizinischen Verbrauchsmaterialien.",
+    "healthcarePharmaceuticals": "Pharmazeutika:",
+    "healthcarePharmaceuticalsDesc": " Prognose der Nachfrage nach Medikamenten zur Sicherstellung einer zeitgerechten Produktion und Verteilung.",
+    "approachTitle": "Unser bewährter Ansatz",
+    "approachDesc": "Unser Ansatz zur Zeitreihenanalyse und Nachfragevorhersage basiert auf einem tiefen Verständnis statistischer Methoden und maschineller Lernalgorithmen. So gewährleisten wir den Erfolg für unsere Kunden:",
+    "dataCollection": "Datensammlung und -aufbereitung:",
+    "dataCollectionDesc": " Wir sammeln und bereiten historische Daten auf und stellen sicher, dass sie sauber und bereit für die Analyse ist. Dazu gehören die Handhabung fehlender Werte, Ausreißer und die Normalisierung der Daten.",
+    "algorithmSelection": "Algorithmus-Auswahl:",
+    "algorithmSelectionDesc": " Wir wählen den am besten geeigneten Algorithmus basierend auf den spezifischen Eigenschaften der Daten und den Anforderungen an die Vorhersage aus. Dies könnte Prophet für seine Robustheit und Interpretierbarkeit oder LSTM für seine Fähigkeit sein, komplexe Muster zu erfassen.",
+    "modelTraining": "Modelltraining und -validierung:",
+    "modelTrainingDesc": " Unsere Experten trainieren das ausgewählte Modell mit historischen Daten und validieren dessen Genauigkeit durch rigorose Tests. Wir verwenden Techniken wie Kreuzvalidierung, um sicherzustellen, dass das Modell gut auf neue Daten verallgemeinert wird.",
+    "forecastGeneration": "Prognosegenerierung und -analyse:",
+    "forecastGenerationDesc": " Wir erstellen Prognosen und analysieren die Ergebnisse, um umsetzbare Erkenntnisse und Empfehlungen zu liefern. Unsere Prognosen enthalten Konfidenzintervalle, um Unsicherheiten zu quantifizieren und bei der Entscheidungsfindung zu helfen.",
+    "continuousImprovement": "Kontinuierliche Verbesserung:",
+    "continuousImprovementDesc": " Wir überwachen kontinuierlich die Leistung unserer Modelle und aktualisieren sie, wenn neue Daten verfügbar werden, um sicherzustellen, dass unsere Prognosen genau und relevant bleiben.",
+    "conclusionTitle": "Fazit",
+    "conclusionDesc": "Unsere Expertise in der Zeitreihenanalyse, unterstützt durch Algorithmen wie Facebook Prophet und LSTM-Netzwerke, ermöglicht es uns, präzise und zuverlässige Nachfrageprognosen für verschiedene Branchen zu liefern. Egal, ob Sie im Gastgewerbe, Einzelhandel, in der Fertigung oder in einem anderen Sektor tätig sind, unsere fortschrittlichen Prognoselösungen können Ihnen helfen, Betriebsabläufe zu optimieren, strategische Planung zu verbessern und das Unternehmenswachstum voranzutreiben.",
+    "contact": "Für weitere Informationen zu unseren Nachfrageprognose-Diensten und wie wir Ihrem Unternehmen helfen können, kontaktieren Sie uns bitte."
+  },
+
+  "Contact": {}
 }

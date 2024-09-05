@@ -6,8 +6,12 @@ import { FormEvent } from "react";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import Footer from "@/components/footer";
+import { useTranslations } from "next-intl";
+
 
 export default function ContactUs() {
+  const t = useTranslations("Contact");
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);

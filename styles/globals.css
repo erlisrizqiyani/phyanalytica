@@ -36,7 +36,10 @@ html{
   color: #0072f5; /* Adjust based on your active state color */
   font-weight: 500;
 }
-
+.custom-justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
 /* styles/globals.css */
 @layer utilities {
   .tracking-tight-negative {
@@ -109,7 +112,7 @@ html{
 /* Text Container style */
 .text-container {
   color: white;
-  max-width: 80%;
+  max-width: 84%;
   margin: 0 auto;
 }
 

@@ -7,5 +7,6 @@ export const config = {
   // Match only internationalized pathnames, including /solution
   matcher: ['/', '/(de|en)/:path*',
     '/solution','/(de|en)/solution/:path*',
-    '/portfolio', '/(de|en)/portfolio/:path*'  ]
+    '/portfolio', '/(de|en)/portfolio/:path*' ,
+    '/contact', '/(de|en)/contact/:path*']
 };
