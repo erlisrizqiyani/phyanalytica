@@ -8,6 +8,7 @@ import {
   NavbarMenuItem,
   NavbarBrand,
   NavbarItem,
+  NavbarMenuToggle,
 } from "@nextui-org/navbar";
 import { Input } from "@nextui-org/input";
 import NextLink from "next/link";
@@ -127,6 +128,10 @@ export const Navbar = () => {
           </div>
         </NavbarItem>
       </NavbarContent>
+      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+        {/* <ThemeSwitch /> */}
+        <NavbarMenuToggle />
+      </NavbarContent>
 
       <NavbarMenu>
         {/* {searchInput} */}
@@ -134,18 +139,9 @@ export const Navbar = () => {
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item.href}-${index}`}>
               <NextLink href={item.href} passHref>
-                <NextUILink
-                  color={
-                    index === 2
-                      ? "primary"
-                      : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                  }
-                  size="lg"
-                >
-                  {item.label}
-                </NextUILink>
+              <NextUILink color="foreground" size="lg">
+            {item.label}
+          </NextUILink>
               </NextLink>
             </NavbarMenuItem>
           ))}

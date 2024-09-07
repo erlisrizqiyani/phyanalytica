@@ -106,6 +106,22 @@
     }
   },
 
+  "Contact": {
+  "title-main": "Kontakt aufnehmen",
+  "title-sub": "Umfassende Datenberatungsdienste",
+  "company-details": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Wir möchten mehr über Ihre Anfrage erfahren. Lassen Sie uns einen kostenlosen Schätzungstermin vereinbaren und die nächsten Schritte besprechen.",
+    "headoffice": "Hauptsitz"
+  },
+  
+  "contact-form": {
+    "title": "Lassen Sie uns Ihr Projekt besprechen",
+    "consent": "Ich stimme der Verarbeitung meiner persönlichen Daten gemäß der Datenschutzrichtlinie zu",
+    "submit": "Nachricht senden"
+  }
+},
+
   "DynamicPricing-Component": {
     "dynamic-pricing-title": "Umsatzpotenzial freisetzen mit dynamischer Preisgestaltung",
     "dynamic-pricing-description": "In einem zunehmend wettbewerbsintensiven Markt müssen Unternehmen jede mögliche Chance nutzen, um ihren Umsatz zu optimieren. Die dynamische Preisgestaltung ist eine leistungsstarke Strategie, die es Unternehmen ermöglicht, Preise in Echtzeit basierend auf Marktnachfrage, Wettbewerb und anderen externen Faktoren anzupassen. Bei Phyanalytica bieten wir umfassende Beratungsdienste zur dynamischen Preisgestaltung an, um Ihrem Unternehmen zu helfen, das Umsatzpotenzial zu maximieren und gleichzeitig die Kundenzufriedenheit zu gewährleisten.",
@@ -314,7 +330,7 @@
     "conclusionTitle": "Fazit",
     "conclusionDesc": "Unsere Expertise in der Zeitreihenanalyse, unterstützt durch Algorithmen wie Facebook Prophet und LSTM-Netzwerke, ermöglicht es uns, präzise und zuverlässige Nachfrageprognosen für verschiedene Branchen zu liefern. Egal, ob Sie im Gastgewerbe, Einzelhandel, in der Fertigung oder in einem anderen Sektor tätig sind, unsere fortschrittlichen Prognoselösungen können Ihnen helfen, Betriebsabläufe zu optimieren, strategische Planung zu verbessern und das Unternehmenswachstum voranzutreiben.",
     "contact": "Für weitere Informationen zu unseren Nachfrageprognose-Diensten und wie wir Ihrem Unternehmen helfen können, kontaktieren Sie uns bitte."
-  },
+  }
 
-  "Contact": {}
+  
 }

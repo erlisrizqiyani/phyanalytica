@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from 'framer-motion';
 import ContentImg from "@/components/content-img";
 import ContentGrid from "@/components/content-grid";
 import ContentCard from "@/components/content-card";
@@ -93,6 +94,7 @@ const imgButtons = [
   },
 ];
 
+
 export default function Home() {
   const t = useTranslations("HomePage");
   const contentItems = [
@@ -132,6 +134,7 @@ export default function Home() {
       description: t("contentItems.6.description"),
     },
   ];
+
   return (
     <section className="container-main">
       <div className="flex w-full h-screen">
@@ -151,7 +154,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-about" id="home-whoweare">
+      <div className="container-about"
+      id="home-whoweare">
         <ContentImg
           topText={t("contentimg1.topText")}
           bottomText={t("contentimg1.bottomText")}

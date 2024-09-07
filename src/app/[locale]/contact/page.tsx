@@ -34,17 +34,15 @@ export default function ContactUs() {
   return (
     <section>
       <div className="overlay-text-container">
-        <h1 className="overlay-text">Get In Touch</h1>
+        <h1 className="overlay-text">{t("title-main")}</h1>
         <h2 className="overlay-subtext -mt-4">
-          Comprehensive Data Consulting Services
+        {t("title-sub")}
         </h2>
       </div>
       <div className="contact-container sm:mx-8 lg:mx-auto mt-60">
         <div className="company-details">
-          <h1 className={title()}>Contact Us</h1>
-          <p>
-            We would like to know more about your request. Let's schedule a free
-            estimation call and discuss the next steps.
+          <h1 className={title()}>{t("company-details.title")}</h1>
+          <p>{t("company-details.description")}
           </p>
           <p>
             <FaEnvelope className="icon ml" /> Email us at{" "}
@@ -60,7 +58,7 @@ export default function ContactUs() {
           </p>
 
           <div className="company-addresses">
-            <h4>Head Office</h4>
+            <h4>{t("company-details.headoffice")}</h4>
             <div className="address-section">
               <MdLocationOn className="icon" />
               Hattingerstr 273 44795, Bochum NRW Germany
@@ -73,7 +71,7 @@ export default function ContactUs() {
         </div>
 
         <div className="contact-form">
-          <h2 className={title()}>Let’s discuss your project</h2>
+          <h2 className={title()}>{t("contact-form.title")}</h2>
           <form onSubmit={handleSubmit} className="mt-2" method="POST">
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
@@ -85,10 +83,9 @@ export default function ContactUs() {
             ></textarea>
             {/* <input type="file" name="attachment" /> */}
             <label>
-              <input type="checkbox" name="consent" required /> I consent to
-              processing my personal data according to the Privacy Policy
+              <input type="checkbox" name="consent" required /> {t("contact-form.consent")}
             </label>
-            <button type="submit">Send Message</button>
+            <button type="submit">{t("contact-form.submit")}</button>
           </form>
         </div>
       </div>

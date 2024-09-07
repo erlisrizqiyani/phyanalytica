@@ -10,6 +10,7 @@
     left: 0;
   }
   
+
   .overlay-text-container {
     position: absolute;
     top: 20%;
@@ -20,7 +21,7 @@
   }
   
   .overlay-text {
-    font-size: 68px; /* Set font size to 96px */
+    font-size: 82px; /* Set font size to 96px */
     font-weight: 800; /* Set font weight to extra bold */
   }
   
@@ -40,13 +41,23 @@
     height: auto;
   }
   
+  @media (min-width: 1024px){
+    .overlay-text-container{
+      top: 10%;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .overlay-text-container{
+      top: 10%;
+    }
+  }
   
   @media (max-width: 768px) {
     .full-width-image {
-      height: 518px;
+      height: 718px;
     }
     .overlay-text-container{
-      top: 15%;
+      top: 12%;
     }
     .overlay-text {
       font-size: 48px; /* Smaller font size for smaller screens */
@@ -58,11 +69,8 @@
   }
   
   @media (max-width: 480px) {
-    .full-width-image {
-        height: 718px;
-      }
     .overlay-text-container{
-      top: 20%;
+      top: 15%;
     }
     .overlay-text {
       font-size: 32px; /* Even smaller font size for very small screens */

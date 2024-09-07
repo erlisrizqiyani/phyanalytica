@@ -91,7 +91,7 @@
   },
 
   "Portfolio": {
-    "title-main": "Phyanalytica",
+    "title-main": "Portfolio",
     "title-sub": "Comprehensive Data Consulting Services",
     "card1": {
       "title": "Time Series Analysis",
@@ -104,6 +104,20 @@
     "card3": {
       "title": "Dynamic Pricing",
       "description": "Dynamic pricing is a powerful strategy that allows companies to adjust prices in real-time based on market demand, competition, and other external factors. At Phyanalytica, we offer comprehensive dynamic pricing consultation services to help your business maximize its revenue potential while maintaining customer satisfaction."
+    }
+  },
+  "Contact": {
+    "title-main": "Get In Touch",
+    "title-sub": "Comprehensive Data Consulting Services",
+    "company-details":{
+      "title": "Contact Us",
+      "description": "We would like to know more about your request. Let's schedule a free estimation call and discuss the next steps.",
+      "headoffice": "Head Office"
+    },
+    "contact-form": {
+      "title": "Let’s discuss your project",
+      "consent": "I consent to processing my personal data according to the Privacy Policy",
+      "submit": "Send Message"
     }
   },
 
@@ -316,7 +330,7 @@
     "conclusionTitle": "Conclusion",
     "conclusionDesc": "Our expertise in time series analysis, powered by algorithms like Facebook Prophet and LSTM networks, enables us to deliver precise and reliable demand forecasts for various industries. Whether you are in hospitality, retail, manufacturing, or any other sector, our advanced forecasting solutions can help you optimize operations, enhance strategic planning, and drive business growth.",
     "contact": "For more information on our demand forecasting services and how we can help your business, please contact us."
-  },
+  }
 
-  "Contact": {}
+  
 }
