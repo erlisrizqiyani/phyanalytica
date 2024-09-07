@@ -94,6 +94,10 @@ const imgButtons = [
   },
 ];
 
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -154,8 +158,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-about"
-      id="home-whoweare">
+      <motion.div
+        className="container-about"
+        id="home-whoweare"
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUpVariants}
+        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 0.5 }} 
+      >
         <ContentImg
           topText={t("contentimg1.topText")}
           bottomText={t("contentimg1.bottomText")}
@@ -165,18 +176,28 @@ export default function Home() {
           imageUrl="/Home/img-about.jpg"
           buttonHref="/solution#sol-whoweare"
         />
-      </div>
+      </motion.div>
 
-      <div className="container-whatwedo" id="home-whatwedo">
+      <motion.div className="container-whatwedo" id="home-whatwedo"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUpVariants}
+      transition={{ duration: 1 }}
+      >
         <ContentGrid
           topText={t("contentgrid.topText")}
           bottomText={t("contentgrid.bottomText")}
           highlightedWord={t("contentgrid.highlightedWord")}
           items={contentItems}
         />
-      </div>
+      </motion.div>
 
-      <div className="container-didyouknow" id="home-didyouknow">
+      <motion.div className="container-didyouknow" id="home-didyouknow"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUpVariants}
+      transition={{ duration: 1 }}
+      >
         <div className="grid-contentcard">
           <ContentCard
             topText={t("ContentCard1.topText")}
@@ -203,9 +224,13 @@ export default function Home() {
             highlightedWord={t("ContentCard3.highlightedWord")}
           />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="container-industries" id="home-industries">
+      <motion.div className="container-industries" id="home-industries"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUpVariants}
+      transition={{ duration: 1 }}>
         <ContentTitle
           topText="OUR SPECIALIZATION"
           bottomText="Industries we work in"
@@ -223,9 +248,13 @@ export default function Home() {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
 
-      <div className="container-client" id="home-client">
+      <motion.div className="container-client" id="home-client"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUpVariants}
+      transition={{ duration: 1 }}>
         <ContentTitle
           topText="TRUSTED BY"
           bottomText="Leading Brand"
@@ -235,7 +264,7 @@ export default function Home() {
         <div className="client-logo">
           <ClientLogos />
         </div>
-      </div>
+      </motion.div>
 
       <div className="footer">
         <Footer />

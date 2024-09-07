@@ -18,12 +18,18 @@ import "@/styles/Solution.css";
 import { title } from "@/components/primitives";
 import FAQ from "@/components/faq";
 import Tools from "@/components/tools";
+import { motion, useAnimation, useInView } from 'framer-motion';
 
 interface FAQItem {
   title: string;
   content: string | string[];
   icon: React.ReactNode;
 }
+
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function Solution() {
   const t = useTranslations("Solution");
@@ -128,7 +134,11 @@ export default function Solution() {
       </div>
 
       <div className="container-main ">
-        <div className="solution-content-img mx-auto" id="sol-whoweare">
+        <motion.div className="solution-content-img mx-auto" id="sol-whoweare"
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUpVariants}
+        transition={{ duration: 1 }}>
           <ContentImg
             topText={t("contentImg1.topText")}
             bottomText={t("contentImg1.bottomText")}
@@ -138,9 +148,13 @@ export default function Solution() {
             imageUrl="/Home/img-about.jpg"
             buttonHref="/contact"
           />
-        </div>
+        </motion.div>
 
-        <div className="sol-offer" id="sol-offer">
+        <motion.div className="sol-offer" id="sol-offer"
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUpVariants}
+        transition={{ duration: 1 }}>
           <ContentTitle
             topText={t("ContentTitle1.topText")}
             bottomText={t("ContentTitle1.bottomText")}
@@ -150,9 +164,13 @@ export default function Solution() {
           <p className="text-center justify-center text-2xl mt-8">
             {t("ContentTitle1.description")}
           </p>
-        </div>
+        </motion.div>
 
-        <div className="sol-services" id="sol-services">
+        <motion.div className="sol-services" id="sol-services"
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUpVariants}
+        transition={{ duration: 1 }}>
           <ContentTitle
             topText={t("ContentTitle2.topText")}
             bottomText={t("ContentTitle1.bottomText")}
@@ -163,10 +181,14 @@ export default function Solution() {
           <div className="mt-8">
             <FAQ faqs={faqs} />
           </div>
-        </div>
-        <div className="sol-tech pt-20" id="sol-tech">
+        </motion.div>
+        <motion.div className="sol-tech pt-20" id="sol-tech"
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUpVariants}
+        transition={{ duration: 1 }}>
           <Tools />
-        </div>
+        </motion.div>
 
         <div className="absolute left-0 w-full mt-32">
           <Footer />

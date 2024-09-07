@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef } from "react";
+import { motion, useAnimation, useInView } from 'framer-motion';
 import Footer from "@/components/footer";
 import Card from "@/components/portfolio";
 import ContentTitle from "@/components/content-title";
@@ -9,6 +10,11 @@ import DynamicPricingArticle from "@/components/Portfolio/DynamicPricing";
 import { useTranslations } from "next-intl";
 
 import "@/styles/Portfolio.css";
+
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function Portfolio() {
   const t = useTranslations("Portfolio");
@@ -32,7 +38,11 @@ export default function Portfolio() {
       </div>
 
       <div className="container-main">
-      <div className="card-container">
+      <motion.div className="card-container"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUpVariants}
+      transition={{ duration: 1 }}>
         <div className=" grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <Card
             imageSrc="/Portfolio/Portfolio_Time.jpg"
@@ -56,8 +66,12 @@ export default function Portfolio() {
             onClick={() => scrollToSection(section3Ref)}
           />
         </div>
-      </div>
-      <div ref={section1Ref} className="pt-24" id="port-time">
+      </motion.div>
+      <motion.div ref={section1Ref} className="pt-24" id="port-time"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUpVariants}
+      transition={{ duration: 1 }}>
         <div className="mb-2">
           <ContentTitle
             topText="Portfolio"
@@ -81,9 +95,13 @@ export default function Portfolio() {
         <div>
           <TimeSeriesArticle />
         </div>
-      </div>
+      </motion.div>
 
-      <div ref={section2Ref} className="pt-4" id="port-ocr">
+      <motion.div ref={section2Ref} className="pt-4" id="port-ocr"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUpVariants}
+      transition={{ duration: 1 }}>
         <div className="mb-2">
           <ContentTitle
             topText="Portfolio"
@@ -100,9 +118,13 @@ export default function Portfolio() {
             textPosition="right"
           /> */}
         <OcrTools />
-      </div>
+      </motion.div>
 
-      <div ref={section3Ref} className="pt-4" id="port-pricing">
+      <motion.div ref={section3Ref} className="pt-4" id="port-pricing"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInUpVariants}
+      transition={{ duration: 1 }}>
         <div className="mb-2">
           <ContentTitle
             topText="Portfolio"
@@ -118,10 +140,11 @@ export default function Portfolio() {
             description="Discover our dynamic pricing strategies and case studies across various sectors."
             textPosition="left"
           /> */}
-      </div>
+      
       <div>
         <DynamicPricingArticle />
       </div>
+      </motion.div>
 
       <div className="absolute left-0 w-full mt-8">
         <Footer />
