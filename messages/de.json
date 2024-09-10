@@ -81,12 +81,104 @@
     "ContentTitle1": {
       "topText": "WAS WIR BIETEN",
       "bottomText": "Unsere Expertise",
-      "description": "Bei Phyanalytica bieten wir eine Reihe von Beratungsdiensten für die Datenanalyse an. Wir unterstützen Unternehmen während des gesamten Prozesses, von der Strategiefindung und Überprüfung bis hin zur Gestaltung von Architekturen und der Implementierung der besten Technologielösungen. Unsere Expertise in der Datenwissenschaftsberatung umfasst Bereiche wie Sicherheit, Compliance und maschinelles Lernen, um robuste und effektive Lösungen zu gewährleisten."
+      "description": "Der Umgang mit großen und umfangreichen Datenmengen macht Ihr Team weniger produktiv. Um umsetzbare Erkenntnisse zu gewinnen, benötigen Sie einen Experten – lehnen Sie sich zurück, entspannen Sie sich und erhalten Sie umfassende Berichte über Ihr Unternehmen innerhalb weniger Tage. Wir helfen Ihnen auch bei der Entwicklung maßgeschneiderter Softwarelösungen, die darauf abzielen, Ihre Abläufe zu optimieren und Wachstum zu fördern, damit Ihr Unternehmen effizient und effektiv läuft."
     },
     "ContentTitle2": {
       "topText": "UNSERE DIENSTLEISTUNGEN",
       "bottomText": "Datenberatungsdienste"
-    }
+    },
+    "faqs": [
+      {
+        "title": "Computervision-Dienste",
+        "content": [
+          "Automatisierte Erkennung von Fehlern in Leiterplatten, Textilien, Autoteilen und Konsumgütern",
+          "Echtzeit-Überwachung zur Sicherstellung einer gleichbleibenden Produktqualität",
+          "Reduzierung der manuellen Inspektionszeit und Arbeitskosten",
+          "Erkennung und Klassifizierung von Objekten in Bildern oder Videostreams",
+          "Anwendungen in den Bereichen Sicherheit, Fertigung und Einzelhandel",
+          "Anpassbare Modelle, die auf die spezifischen Geschäftsanforderungen zugeschnitten sind"
+        ]
+      },
+      {
+        "title": "Datenstrategie",
+        "content": [
+          "Bewertung der aktuellen Dateninfrastruktur und betrieblichen Abläufe",
+          "Geschäftsziele und wichtige Leistungskennzahlen (KPIs)",
+          "Einsatz von Datenbereinigungs- und Standardisierungsverfahren",
+          "Bewertung der vorhandenen Analysetools, Plattformen und Technologien",
+          "Durchsetzung von Richtlinien zur Datenverwaltung",
+          "Verbesserung der Datensicherheitsprotokolle",
+          "Ermittlung des Potenzials für fortgeschrittene Analysen und maschinelles Lernen"
+        ]
+      },
+      {
+        "title": "Datenprüfung",
+        "content": [
+          "Bewertung der aktuellen Infrastruktur, Leistung und Sicherheitslage",
+          "Identifizierung von Engpässen, Latenzproblemen und Optimierungsmöglichkeiten",
+          "Überprüfung der Dokumentation und Arbeitsabläufe",
+          "Bewertung der Effektivität des Technologie-Stacks",
+          "Strategien zur Verbesserung der Effizienz der Datenverarbeitung und -analyse",
+          "Vorschläge zur Leistungssteigerung",
+          "Sicherstellung der Einhaltung branchenspezifischer Vorschriften und Standards"
+        ]
+      },
+      {
+        "title": "Datenvisualisierung",
+        "content": [
+          "Integration der geeigneten Visualisierungssoftware",
+          "Erstellung von optisch ansprechenden und intuitiven Dashboards",
+          "Entwicklung von Berichtssystemen, die auf umfangreiche Datensätze zugeschnitten sind",
+          "Aggregation und Zusammenfassung von Daten",
+          "Implementierung von Echtzeit-Berichterstattungsfunktionen",
+          "Unterstützung bei der Nutzerakzeptanz durch Schulung und Hilfestellung"
+        ]
+      },
+      {
+        "title": "Datenumwandlung",
+        "content": [
+          "Bewertung der aktuellen Datenquellen, -formate und -strukturen",
+          "Vorbereitung und Vorverarbeitung von Daten",
+          "Integration von Daten aus verschiedenen Quellen zu einem zusammenhängenden Datensatz",
+          "Standardisierung von Daten in Bezug auf Einheiten, Messungen und Formate",
+          "Umwandlung von Daten in verschiedene Formate, Plattformen oder Systeme"
+        ]
+      },
+      {
+        "title": "Datenmanagement",
+        "content": [
+          "Sammeln von Daten aus Datenbanken, Anwendungen und externen Quellen",
+          "Zentralisierung der Datenspeicherung und -organisation in einem Repository",
+          "Durchführung von Datenbereinigungs-, Validierungs- und Profilierungsmaßnahmen",
+          "Integration von Sicherheitsprotokollen",
+          "Sicherstellung der Einhaltung von Datenschutzvorschriften",
+          "Verwaltung der Datenqualität",
+          "Festlegung von Richtlinien, Standards und Verfahren für das Datenmanagement"
+        ]
+      },
+      {
+        "title": "Datenengineering und ETL",
+        "content": [
+          "Entwurf von Datenarchitekturen",
+          "Entwicklung von Dateninfrastrukturen",
+          "Beratung und Strategie für Cloud-Engineering",
+          "Automatisierung und Orchestrierung durch DataOps",
+          "Vorbereitung und Durchführung von ETL-/ELT-Prozessen",
+          "Implementierung von Business-Intelligence (BI) und Analyselösungen"
+        ]
+      },
+      {
+        "title": "Datenmodellierung und Vorhersage",
+        "content": [
+          "Fortgeschrittene Datenmodellierungstechniken, die auf die spezifischen Geschäftsanforderungen zugeschnitten sind",
+          "Vorhersagemodellierung zur Prognose zukünftiger Trends und Ergebnisse",
+          "Maschinelle Lernalgorithmen für prädiktive Analysen",
+          "Angepasste Vorhersagemodelle basierend auf der Analyse historischer Daten",
+          "Integration von Vorhersagemodellen in bestehende Geschäftsprozesse",
+          "Kontinuierliche Verfeinerung und Optimierung von Vorhersagemodellen zur Steigerung der Genauigkeit und Leistung"
+        ]
+      }
+    ]
   },
 
   "Portfolio": {
@@ -107,20 +199,20 @@
   },
 
   "Contact": {
-  "title-main": "Kontakt aufnehmen",
-  "title-sub": "Umfassende Datenberatungsdienste",
-  "company-details": {
-    "title": "Kontaktieren Sie uns",
-    "description": "Wir möchten mehr über Ihre Anfrage erfahren. Lassen Sie uns einen kostenlosen Schätzungstermin vereinbaren und die nächsten Schritte besprechen.",
-    "headoffice": "Hauptsitz"
+    "title-main": "Kontakt aufnehmen",
+    "title-sub": "Umfassende Datenberatungsdienste",
+    "company-details": {
+      "title": "Kontaktieren Sie uns",
+      "description": "Wir möchten mehr über Ihre Anfrage erfahren. Lassen Sie uns einen kostenlosen Schätzungstermin vereinbaren und die nächsten Schritte besprechen.",
+      "headoffice": "Hauptsitz"
+    },
+
+    "contact-form": {
+      "title": "Lassen Sie uns Ihr Projekt besprechen",
+      "consent": "Ich stimme der Verarbeitung meiner persönlichen Daten gemäß der Datenschutzrichtlinie zu",
+      "submit": "Nachricht senden"
+    }
   },
-  
-  "contact-form": {
-    "title": "Lassen Sie uns Ihr Projekt besprechen",
-    "consent": "Ich stimme der Verarbeitung meiner persönlichen Daten gemäß der Datenschutzrichtlinie zu",
-    "submit": "Nachricht senden"
-  }
-},
 
   "DynamicPricing-Component": {
     "dynamic-pricing-title": "Umsatzpotenzial freisetzen mit dynamischer Preisgestaltung",
@@ -331,6 +423,4 @@
     "conclusionDesc": "Unsere Expertise in der Zeitreihenanalyse, unterstützt durch Algorithmen wie Facebook Prophet und LSTM-Netzwerke, ermöglicht es uns, präzise und zuverlässige Nachfrageprognosen für verschiedene Branchen zu liefern. Egal, ob Sie im Gastgewerbe, Einzelhandel, in der Fertigung oder in einem anderen Sektor tätig sind, unsere fortschrittlichen Prognoselösungen können Ihnen helfen, Betriebsabläufe zu optimieren, strategische Planung zu verbessern und das Unternehmenswachstum voranzutreiben.",
     "contact": "Für weitere Informationen zu unseren Nachfrageprognose-Diensten und wie wir Ihrem Unternehmen helfen können, kontaktieren Sie uns bitte."
   }
-
-  
 }

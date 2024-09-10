@@ -173,7 +173,8 @@ export default function Home() {
           highlightedWord=""
           description={t("contentimg1.description")}
           buttonText={t("contentimg1.buttonText")}
-          imageUrl="/Home/img-about.jpg"
+          mediaUrl="Data.jpg"
+          mediaType="image"
           buttonHref="/solution#sol-whoweare"
         />
       </motion.div>

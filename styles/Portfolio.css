@@ -42,12 +42,12 @@
   
   @media (min-width: 1024px){
     .overlay-text-container{
-      top: 10%;
+      top: 18%;
     }
   }
   @media (min-width: 769px) and (max-width: 1024px) {
     .overlay-text-container{
-      top: 10%;
+      top: 14%;
     }
   }
   
@@ -56,7 +56,7 @@
       height: 718px;
     }
     .overlay-text-container{
-      top: 12%;
+      top: 18%;
     }
     .overlay-text {
       font-size: 48px; /* Smaller font size for smaller screens */

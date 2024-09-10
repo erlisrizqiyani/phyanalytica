@@ -9,7 +9,8 @@ interface ContentImgProps {
   highlightedWord: string;
   description: string;
   buttonText: string;
-  imageUrl: string;
+  mediaUrl: string; // Renamed to be more generic
+  mediaType: "image" | "video"; // New prop to determine if it's an image or video
   reverse?: boolean;
   buttonHref?: string; // Optional buttonHref for later use
 }
@@ -20,7 +21,8 @@ const ContentImg: React.FC<ContentImgProps> = ({
   highlightedWord,
   description,
   buttonText,
-  imageUrl,
+  mediaUrl,
+  mediaType,
   reverse = false,
   buttonHref, // Optional buttonHref
 }) => {
@@ -49,11 +51,22 @@ const ContentImg: React.FC<ContentImgProps> = ({
         </Button>
       </div>
       <div className="w-full md:w-1/2">
-        <img
-          src={imageUrl}
-          alt={bottomText}
-          className="w-full h-auto object-cover rounded-lg"
-        />
+        {mediaType === "image" ? (
+          <img
+            src={mediaUrl}
+            alt={bottomText}
+            className="w-full h-auto object-cover rounded-lg"
+          />
+        ) : (
+          <video
+            src={mediaUrl}
+            autoPlay
+            loop
+            muted
+            controls
+            className="w-full h-auto object-cover rounded-lg"
+          />
+        )}
       </div>
     </div>
   );

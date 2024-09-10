@@ -75,8 +75,8 @@
     "title-sub": "Comprehensive Data Consulting Services",
     "contentImg1": {
       "topText": "WHO WE ARE",
-      "bottomText": "Data Insight Consultation",
-      "description": "Dealing with huge and abundant data makes your team less productive. To get an insight, you need an expert, sit relax and get the reports about your business within days.",
+      "bottomText": "Data Insight & Software Consultation",
+      "description": "Dealing with huge and abundant data makes your team less productive. To get actionable insights, you need an expert—sit back, relax, and receive comprehensive reports about your business within days. We also help you develop custom software solutions tailored to streamline your operations and drive growth, ensuring your business runs efficiently and effectively.",
       "buttonText": "Contact us"
     },
     "ContentTitle1": {
@@ -87,7 +87,99 @@
     "ContentTitle2": {
       "topText": "OUR SERVICES",
       "bottomText": "Data Consulting Services"
-    }
+    },
+    "faqs": [
+      {
+        "title": "Computer Vision Services",
+        "content": [
+          "Automated identification of defects in PCBs, textiles, automotive parts, and consumer goods",
+          "Real-time monitoring to ensure consistent product quality",
+          "Reduction of manual inspection time and labor costs",
+          "Identifying and classifying objects in images or video streams",
+          "Applications in security, manufacturing, and retail sectors",
+          "Customizable models tailored to specific business needs"
+        ]
+      },
+      {
+        "title": "Data Strategy",
+        "content": [
+          "Assessment of current data infrastructure and operational procedures",
+          "Business objectives and critical performance metrics (KPIs)",
+          "Deployment of data cleaning and standardization procedures",
+          "Evaluation of existing analytics tools, platforms, and technologies",
+          "Enforcement of data governance policies",
+          "Enhancement of data security protocols",
+          "Identification of potential for advanced analytics and machine learning applications"
+        ]
+      },
+      {
+        "title": "Data Audit",
+        "content": [
+          "Evaluation of current infrastructure, performance, and security status",
+          "Identification of bottlenecks, latency concerns, and optimization opportunities",
+          "Review of documentation and workflow processes",
+          "Assessment of technology stack effectiveness",
+          "Strategies for enhancing data processing and analysis efficiency",
+          "Suggestions for performance enhancement",
+          "Ensuring alignment with industry regulations and standards"
+        ]
+      },
+      {
+        "title": "Data Visualization",
+        "content": [
+          "Integration of the appropriate visualization software",
+          "Creation of visually engaging and intuitive dashboards",
+          "Development of reporting systems tailored for extensive datasets",
+          "Aggregation and summarization of data",
+          "Implementation of real-time reporting capabilities",
+          "Support for user adoption through training and assistance"
+        ]
+      },
+      {
+        "title": "Data Transformation",
+        "content": [
+          "Evaluation of current data origins, formats, and structures",
+          "Preparation and preprocessing of data",
+          "Integration of data from various sources to create a cohesive dataset",
+          "Standardization of data units, measurements, and formats",
+          "Conversion of data across diverse formats, platforms, or systems"
+        ]
+      },
+      {
+        "title": "Data Management",
+        "content": [
+          "Gathering data from databases, applications, and external sources",
+          "Centralizing data storage and organization in a repository",
+          "Performing data cleansing, validation, and profiling",
+          "Integrating security protocols",
+          "Ensuring compliance with privacy regulations",
+          "Managing data quality",
+          "Establishing policies, standards, and procedures for data asset management"
+        ]
+      },
+      {
+        "title": "Data Engineering and ETL",
+        "content": [
+          "Designing data architecture",
+          "Developing data infrastructure",
+          "Providing advisory and strategy for cloud engineering",
+          "Automation and orchestration through DataOps",
+          "Preparing and executing ETL/ELT processes",
+          "Implementing business intelligence (BI) and analytics solutions"
+        ]
+      },
+      {
+        "title": "Data Modelling and Prediction",
+        "content": [
+          "Advanced data modeling techniques tailored to specific business needs",
+          "Predictive modeling for forecasting future trends and outcomes",
+          "Machine learning algorithms for predictive analytics",
+          "Customized predictive models based on historical data analysis",
+          "Integration of predictive models into existing business processes",
+          "Continuous refinement and optimization of predictive models for accuracy and performance"
+        ]
+      }
+    ]
   },
 
   "Portfolio": {

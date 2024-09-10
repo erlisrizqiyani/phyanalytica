@@ -124,7 +124,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full flex items-center" justify="end">
         <NavbarItem>
           <div className="langswitch">
-          <LanguageSwitcher /> 
+          <LanguageSwitcher scrolled={scrolled} /> 
           </div>
         </NavbarItem>
       </NavbarContent>

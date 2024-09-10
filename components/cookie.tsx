@@ -1,11 +1,20 @@
-// components/CookieConsent.tsx
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const CookieConsent = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage to see if cookie consent has already been given
+    const consentGiven = localStorage.getItem('cookie-consent');
+    if (!consentGiven) {
+      setIsVisible(true);
+    }
+  }, []);
 
   const acceptCookies = () => {
+    // Save consent in localStorage
+    localStorage.setItem('cookie-consent', 'true');
     setIsVisible(false);
   };
 
@@ -20,7 +29,6 @@ const CookieConsent = () => {
         <p>
           This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our{" "}
           <p className="underline">
-            
             Cookie Policy
           </p>.
         </p>

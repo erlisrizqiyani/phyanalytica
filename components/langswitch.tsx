@@ -2,33 +2,20 @@
 
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
-import { ChangeEvent, useTransition, useEffect, useState } from 'react';
+import { useTransition } from 'react';
+import clsx from 'clsx';
 
-export default function LocalSwitcher() {
+interface LocalSwitcherProps {
+  scrolled: boolean; // Add a prop for scrolled state
+}
+
+export default function LocalSwitcher({ scrolled }: LocalSwitcherProps) {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localActive = useLocale();
   const pathname = usePathname();
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  useEffect(() => {
-    // Function to update screen size state
-    const updateScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 640);
-    };
-
-    // Add event listener on resize
-    window.addEventListener('resize', updateScreenSize);
-
-    // Set initial state
-    updateScreenSize();
-
-    // Cleanup on unmount
-    return () => window.removeEventListener('resize', updateScreenSize);
-  }, []);
-
-  const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const nextLocale = e.target.value;
+  const onLocaleChange = (nextLocale: string) => {
     const currentPath = pathname.split('/').slice(2).join('/'); // Removes the locale from the path
     const newPath = `/${nextLocale}/${currentPath}`;
     startTransition(() => {
@@ -37,17 +24,29 @@ export default function LocalSwitcher() {
   };
 
   return (
-    <label className='border-2 rounded p-2'>
-      <p className='sr-only'>Change language</p>
-      <select
-        defaultValue={localActive}
-        className='bg-transparent py-2'
-        onChange={onSelectChange}
+    <div className="flex items-center space-x-4">
+      <button
+        onClick={() => onLocaleChange('en')}
         disabled={isPending}
+        className={clsx(
+          'pl-4 py-2',
+          { 'font-bold': localActive === 'en', 'font-light': localActive !== 'en' },
+          { 'text-black': scrolled, 'text-white': !scrolled } // Conditionally change color
+        )}
       >
-        <option className="text-black" value='en'>{isSmallScreen ? 'en' : 'English'}</option>
-        <option className="text-black" value='de'>{isSmallScreen ? 'de' : 'German'}</option>
-      </select>
-    </label>
+        en
+      </button>
+      <button
+        onClick={() => onLocaleChange('de')}
+        disabled={isPending}
+        className={clsx(
+          'pr-4 py-2',
+          { 'font-bold': localActive === 'de', 'font-light': localActive !== 'de' },
+          { 'text-black': scrolled, 'text-white': !scrolled } // Conditionally change color
+        )}
+      >
+        de
+      </button>
+    </div>
   );
 }
