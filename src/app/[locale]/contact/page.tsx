@@ -47,7 +47,7 @@ export default function ContactUs() {
           <p>
             <FaEnvelope className="icon ml" /> Email us at{" "}
             <a href="mailto:mitra@phyanalytic.com" className="ml-2">
-              mitra@phyanalytic.com
+              mitra@phyanalytica.com
             </a>
           </p>
           <p>

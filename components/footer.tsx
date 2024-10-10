@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center">
               <FaEnvelope className="w-5 h-5 mr-2" />
-              <span>mitra@phyanalytic.com</span>
+              <span>mitra@phyanalytica.com</span>
             </div>
           </div>
         </div>
