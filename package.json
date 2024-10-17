@@ -6,7 +6,8 @@
 		"dev": "next dev --turbo",
 		"build": "next build",
 		"start": "NODE_ENV=production node server.js",
-		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
+		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix",
+		"postbuild": "next-sitemap"
 	},
 	"dependencies": {
 		"@heroicons/react": "^2.1.5",
@@ -32,6 +33,7 @@
 		"next": "14.2.4",
 		"next-i18next": "^15.3.1",
 		"next-intl": "^3.18.1",
+		"next-sitemap": "^4.2.3",
 		"next-themes": "^0.2.1",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
