@@ -18,7 +18,6 @@ import LogoIcon, { SearchIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import LanguageSwitcher from "@/components/langswitch"; // Import LanguageSwitcher
 
-
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
@@ -30,9 +29,14 @@ export const Navbar = () => {
       setScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener("scroll", handleScroll);
+    }
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (typeof window !== 'undefined') {
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
 
@@ -124,24 +128,22 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full flex items-center" justify="end">
         <NavbarItem>
           <div className="langswitch">
-          <LanguageSwitcher scrolled={scrolled} /> 
+            <LanguageSwitcher scrolled={scrolled} />
           </div>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        {/* <ThemeSwitch /> */}
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>
-        {/* {searchInput} */}
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item.href}-${index}`}>
               <NextLink href={item.href} passHref>
-              <NextUILink color="foreground" size="lg">
-            {item.label}
-          </NextUILink>
+                <NextUILink color="foreground" size="lg">
+                  {item.label}
+                </NextUILink>
               </NextLink>
             </NavbarMenuItem>
           ))}
