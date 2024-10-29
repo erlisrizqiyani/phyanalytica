@@ -222,7 +222,7 @@ export default function Home() {
           />
         </div>
       </motion.div>
-
+*/}
       <motion.div className="container-industries" id="home-industries"
       initial="hidden"
       whileInView="visible"
@@ -246,7 +246,7 @@ export default function Home() {
           ))}
         </div>
       </motion.div>
-*/}
+
       <motion.div className="container-client" id="home-client"
       initial="hidden"
       whileInView="visible"
