@@ -262,12 +262,12 @@ export default function Home() {
           <ClientLogos />
         </div>
       </motion.div>
-
+*/}
       <div className="footer">
         <Footer />
       </div>
 
-      <CookieConsent /> */}
+      <CookieConsent /> 
     </section>
   );
 }
