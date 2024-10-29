@@ -12,10 +12,6 @@ const ImgButton: React.FC<ImgButtonProps> = ({
   title,
   buttonLabels,
 }) => {
-  // Menentukan jumlah button yang ditampilkan berdasarkan ukuran layar
-  const isSmallScreen = window.innerWidth <= 768;
-  const visibleLabels = isSmallScreen ? buttonLabels.slice(0, 2) : buttonLabels;
-
   return (
     <div className="relative img-button-container">
       {/* Apply a dark overlay effect using opacity */}
@@ -25,7 +21,8 @@ const ImgButton: React.FC<ImgButtonProps> = ({
         <h2 className="text-lg mb-4 text-white">{title}</h2>
       </div>
       <div className="absolute bottom-0 left-0 p-4 z-10">
-        {visibleLabels.map((label, index) => (
+        {/* Use Tailwind CSS to control button visibility based on screen size */}
+        {buttonLabels.map((label, index) => (
           <Button
             key={index}
             variant="outlined"
@@ -34,6 +31,14 @@ const ImgButton: React.FC<ImgButtonProps> = ({
             {label}
           </Button>
         ))}
+        {/* Show additional buttons for larger screens */}
+        <div className="md:hidden">
+          {buttonLabels.slice(0, 2).map((label, index) => (
+            <Button key={index} variant="outlined" color="white">
+              {label}
+            </Button>
+          ))}
+        </div>
       </div>
     </div>
   );
