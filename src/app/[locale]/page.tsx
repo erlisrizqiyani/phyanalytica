@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { motion } from 'framer-motion';
 import ContentImg from "@/components/content-img";
 import ContentGrid from "@/components/content-grid";
@@ -34,7 +34,6 @@ const imgButtons = [
       "Customer Insights",
     ],
   },
-
   {
     imageSrc: "/Home/Industri_Healthcare.jpg",
     title: "Healthcare",
@@ -45,7 +44,6 @@ const imgButtons = [
       "Data Analytics",
     ],
   },
-
   {
     imageSrc: "/Home/Industri_Travel.jpg",
     title: "Travel",
@@ -56,7 +54,6 @@ const imgButtons = [
       "Digitalization",
     ],
   },
-
   {
     imageSrc: "/Home/Industri_Retail.jpg",
     title: "Retail",
@@ -68,7 +65,6 @@ const imgButtons = [
       "CRM Implementation",
     ],
   },
-
   {
     imageSrc: "/Home/Industri_Manufacturing.jpg",
     title: "Manufacturing",
@@ -80,7 +76,6 @@ const imgButtons = [
       "Inventory Management",
     ],
   },
-
   {
     imageSrc: "/Home/Industri_Insurance.jpg",
     title: "Insurance",
@@ -101,11 +96,7 @@ const fadeInUpVariants = {
 
 export default function Home() {
   const t = useTranslations("HomePage");
-  const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true); // Ensures this code only runs on the client side
-  }, []);
   const contentItems = [
     {
       icon: <FaDatabase size={24} />,
@@ -147,15 +138,13 @@ export default function Home() {
   return (
     <section className="container-main">
       <div className="flex w-full h-screen">
-      {isMounted && typeof window !== "undefined" && (
-          <video
-            className="absolute top-0 left-0 full-width h-full object-cover"
-            src="/Home/head.mp4"
-            autoPlay
-            loop
-            muted
-          />
-        )}
+        <video
+          className="absolute top-0 left-0 full-width h-full object-cover"
+          src="/Home/head.mp4"
+          autoPlay
+          loop
+          muted
+        />
         <div className="overlay">
           <div className="text-container">
             <h1 className="title-main">{t("title-main")}</h1>
@@ -174,18 +163,16 @@ export default function Home() {
         transition={{ duration: 1 }}
         viewport={{ once: false, amount: 0.5 }} 
       >
-        {isMounted && (
-          <ContentImg
-            topText={t("contentimg1.topText")}
-            bottomText={t("contentimg1.bottomText")}
-            highlightedWord=""
-            description={t("contentimg1.description")}
-            buttonText={t("contentimg1.buttonText")}
-            mediaUrl="Data.jpg"
-            mediaType="image"
-            buttonHref="/solution#sol-whoweare"
-          />
-        )}
+        <ContentImg
+          topText={t("contentimg1.topText")}
+          bottomText={t("contentimg1.bottomText")}
+          highlightedWord=""
+          description={t("contentimg1.description")}
+          buttonText={t("contentimg1.buttonText")}
+          mediaUrl="Data.jpg"
+          mediaType="image"
+          buttonHref="/solution#sol-whoweare"
+        />
       </motion.div>
 
       <motion.div className="container-whatwedo" id="home-whatwedo"
@@ -194,14 +181,12 @@ export default function Home() {
       variants={fadeInUpVariants}
       transition={{ duration: 1 }}
       >
-        {isMounted && (
-          <ContentGrid
-            topText={t("contentgrid.topText")}
-            bottomText={t("contentgrid.bottomText")}
-            highlightedWord={t("contentgrid.highlightedWord")}
-            items={contentItems}
-          />
-        )}
+        <ContentGrid
+          topText={t("contentgrid.topText")}
+          bottomText={t("contentgrid.bottomText")}
+          highlightedWord={t("contentgrid.highlightedWord")}
+          items={contentItems}
+        />
       </motion.div>
 
       <motion.div className="container-didyouknow" id="home-didyouknow"
@@ -274,15 +259,15 @@ export default function Home() {
           bottomTextSize="black48"
         />
         <div className="client-logo">
-        {isMounted && <ClientLogos />}
+          <ClientLogos />
         </div>
       </motion.div>
 
       <div className="footer">
-      {isMounted && <Footer />}
+        <Footer />
       </div>
 
-      {isMounted && <CookieConsent />}
+      <CookieConsent />
     </section>
   );
 }
