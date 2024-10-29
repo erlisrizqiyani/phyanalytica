@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import ContentImg from "@/components/content-img";
 import ContentGrid from "@/components/content-grid";
 import ContentCard from "@/components/content-card";
@@ -101,10 +101,10 @@ const fadeInUpVariants = {
 
 export default function Home() {
   const t = useTranslations("HomePage");
-  const [isClient, setIsClient] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Ensures this code only runs on the client side
+    setIsMounted(true); // Ensures this code only runs on the client side
   }, []);
   const contentItems = [
     {
@@ -147,7 +147,7 @@ export default function Home() {
   return (
     <section className="container-main">
       <div className="flex w-full h-screen">
-      {isClient && (
+      {isMounted && typeof window !== "undefined" && (
           <video
             className="absolute top-0 left-0 full-width h-full object-cover"
             src="/Home/head.mp4"
@@ -174,16 +174,18 @@ export default function Home() {
         transition={{ duration: 1 }}
         viewport={{ once: false, amount: 0.5 }} 
       >
-        <ContentImg
-          topText={t("contentimg1.topText")}
-          bottomText={t("contentimg1.bottomText")}
-          highlightedWord=""
-          description={t("contentimg1.description")}
-          buttonText={t("contentimg1.buttonText")}
-          mediaUrl="Data.jpg"
-          mediaType="image"
-          buttonHref="/solution#sol-whoweare"
-        />
+        {isMounted && (
+          <ContentImg
+            topText={t("contentimg1.topText")}
+            bottomText={t("contentimg1.bottomText")}
+            highlightedWord=""
+            description={t("contentimg1.description")}
+            buttonText={t("contentimg1.buttonText")}
+            mediaUrl="Data.jpg"
+            mediaType="image"
+            buttonHref="/solution#sol-whoweare"
+          />
+        )}
       </motion.div>
 
       <motion.div className="container-whatwedo" id="home-whatwedo"
@@ -192,12 +194,14 @@ export default function Home() {
       variants={fadeInUpVariants}
       transition={{ duration: 1 }}
       >
-        <ContentGrid
-          topText={t("contentgrid.topText")}
-          bottomText={t("contentgrid.bottomText")}
-          highlightedWord={t("contentgrid.highlightedWord")}
-          items={contentItems}
-        />
+        {isMounted && (
+          <ContentGrid
+            topText={t("contentgrid.topText")}
+            bottomText={t("contentgrid.bottomText")}
+            highlightedWord={t("contentgrid.highlightedWord")}
+            items={contentItems}
+          />
+        )}
       </motion.div>
 
       <motion.div className="container-didyouknow" id="home-didyouknow"
@@ -270,15 +274,15 @@ export default function Home() {
           bottomTextSize="black48"
         />
         <div className="client-logo">
-          <ClientLogos />
+        {isMounted && <ClientLogos />}
         </div>
       </motion.div>
 
       <div className="footer">
-        <Footer />
+      {isMounted && <Footer />}
       </div>
 
-      <CookieConsent />
+      {isMounted && <CookieConsent />}
     </section>
   );
 }
