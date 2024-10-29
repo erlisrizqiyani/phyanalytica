@@ -222,7 +222,7 @@ export default function Home() {
           />
         </div>
       </motion.div>
-{/*
+
       <motion.div className="container-industries" id="home-industries"
       initial="hidden"
       whileInView="visible"
@@ -234,6 +234,7 @@ export default function Home() {
           alignment="center"
           bottomTextSize="black48"
         />
+        {/*
         <hr className="border-industries border-t-2 my-8" />
         <div className="grid-industries">
           {imgButtons.map((btn, index) => (
@@ -243,10 +244,12 @@ export default function Home() {
               title={btn.title}
               buttonLabels={btn.buttonLabels}
             />
+            
           ))}
         </div>
+        */}
       </motion.div>
-*/}
+
       <motion.div className="container-client" id="home-client"
       initial="hidden"
       whileInView="visible"
