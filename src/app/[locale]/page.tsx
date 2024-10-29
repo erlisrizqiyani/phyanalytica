@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from 'framer-motion';
 import ContentImg from "@/components/content-img";
 import ContentGrid from "@/components/content-grid";
@@ -101,6 +101,11 @@ const fadeInUpVariants = {
 
 export default function Home() {
   const t = useTranslations("HomePage");
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Ensures this code only runs on the client side
+  }, []);
   const contentItems = [
     {
       icon: <FaDatabase size={24} />,
@@ -142,13 +147,15 @@ export default function Home() {
   return (
     <section className="container-main">
       <div className="flex w-full h-screen">
-        <video
-          className="absolute top-0 left-0 full-width h-full object-cover"
-          src="/Home/head.mp4"
-          autoPlay
-          loop
-          muted
-        />
+      {isClient && (
+          <video
+            className="absolute top-0 left-0 full-width h-full object-cover"
+            src="/Home/head.mp4"
+            autoPlay
+            loop
+            muted
+          />
+        )}
         <div className="overlay">
           <div className="text-container">
             <h1 className="title-main">{t("title-main")}</h1>
