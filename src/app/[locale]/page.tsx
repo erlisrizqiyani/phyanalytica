@@ -153,7 +153,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-{/* 
+
       <motion.div
         className="container-about"
         id="home-whoweare"
@@ -188,7 +188,7 @@ export default function Home() {
           items={contentItems}
         />
       </motion.div>
-*/}
+
       <motion.div className="container-didyouknow" id="home-didyouknow"
       initial="hidden"
       whileInView="visible"
