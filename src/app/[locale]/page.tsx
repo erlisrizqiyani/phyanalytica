@@ -153,7 +153,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+{/* 
       <motion.div
         className="container-about"
         id="home-whoweare"
@@ -267,7 +267,7 @@ export default function Home() {
         <Footer />
       </div>
 
-      <CookieConsent />
+      <CookieConsent /> */}
     </section>
   );
 }
