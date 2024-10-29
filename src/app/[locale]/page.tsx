@@ -246,7 +246,7 @@ export default function Home() {
           ))}
         </div>
       </motion.div>
-
+*/}
       <motion.div className="container-client" id="home-client"
       initial="hidden"
       whileInView="visible"
@@ -262,7 +262,7 @@ export default function Home() {
           <ClientLogos />
         </div>
       </motion.div>
-*/}
+
       <div className="footer">
         <Footer />
       </div>
